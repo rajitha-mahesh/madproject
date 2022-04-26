@@ -59,7 +59,7 @@
         android:layout_width="369dp"
         android:layout_height="50dp"
         tools:layout_editor_absoluteX="21dp"
-        tools:layout_editor_absoluteY="43dp" />
+        tools:layout_editor_absoluteY="54dp" />
 
     <Button
         android:id="@+id/bDescription1"
