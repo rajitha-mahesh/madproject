@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".favourites">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="120dp"
+        android:layout_height="78dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="157dp"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="120dp"
+        android:layout_height="78dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="252dp"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="120dp"
+        android:layout_height="78dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="350dp"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="120dp"
+        android:layout_height="78dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="449dp"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="120dp"
+        android:layout_height="78dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="537dp"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="120dp"
+        android:layout_height="78dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="637dp"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <SearchView
+        android:id="@+id/sSearch"
+        android:layout_width="369dp"
+        android:layout_height="50dp"
+        tools:layout_editor_absoluteX="21dp"
+        tools:layout_editor_absoluteY="43dp" />
+
+    <Button
+        android:id="@+id/bDescription1"
+        android:layout_width="171dp"
+        android:layout_height="78dp"
+        android:text="Description 1"
+        tools:layout_editor_absoluteX="133dp"
+        tools:layout_editor_absoluteY="157dp" />
+
+    <Button
+        android:id="@+id/bDescription6"
+        android:layout_width="170dp"
+        android:layout_height="76dp"
+        android:text="Description 2"
+        tools:layout_editor_absoluteX="134dp"
+        tools:layout_editor_absoluteY="254dp" />
+
+    <Button
+        android:id="@+id/bDescription6"
+        android:layout_width="172dp"
+        android:layout_height="77dp"
+        android:text="Description 3"
+        tools:layout_editor_absoluteX="134dp"
+        tools:layout_editor_absoluteY="351dp" />
+
+    <Button
+        android:id="@+id/bDescription6"
+        android:layout_width="171dp"
+        android:layout_height="72dp"
+        android:text="Description 4"
+        tools:layout_editor_absoluteX="133dp"
+        tools:layout_editor_absoluteY="449dp" />
+
+    <Button
+        android:id="@+id/bDescription6"
+        android:layout_width="171dp"
+        android:layout_height="76dp"
+        android:text="Description 5"
+        tools:layout_editor_absoluteX="131dp"
+        tools:layout_editor_absoluteY="539dp" />
+
+    <Button
+        android:id="@+id/bDescription6"
+        android:layout_width="170dp"
+        android:layout_height="77dp"
+        android:text="Description 6"
+        tools:layout_editor_absoluteX="134dp"
+        tools:layout_editor_absoluteY="638dp" />
+
+    <ImageButton
+        android:id="@+id/delete"
+        android:layout_width="62dp"
+        android:layout_height="57dp"
+        android:background="@android:drawable/ic_delete"
+        app:srcCompat="@android:drawable/ic_menu_delete"
+        tools:layout_editor_absoluteX="317dp"
+        tools:layout_editor_absoluteY="169dp" />
+
+    <ImageButton
+        android:id="@+id/delete2"
+        android:layout_width="62dp"
+        android:layout_height="57dp"
+        android:background="@android:drawable/ic_delete"
+        app:srcCompat="@android:drawable/ic_menu_delete"
+        tools:layout_editor_absoluteX="317dp"
+        tools:layout_editor_absoluteY="273dp" />
+
+    <ImageButton
+        android:id="@+id/delete3"
+        android:layout_width="62dp"
+        android:layout_height="57dp"
+        android:background="@android:drawable/ic_delete"
+        app:srcCompat="@android:drawable/ic_menu_delete"
+        tools:layout_editor_absoluteX="317dp"
+        tools:layout_editor_absoluteY="361dp" />
+
+    <ImageButton
+        android:id="@+id/delete4"
+        android:layout_width="62dp"
+        android:layout_height="57dp"
+        android:background="@android:drawable/ic_delete"
+        app:srcCompat="@android:drawable/ic_menu_delete"
+        tools:layout_editor_absoluteX="317dp"
+        tools:layout_editor_absoluteY="449dp" />
+
+    <ImageButton
+        android:id="@+id/delete5"
+        android:layout_width="62dp"
+        android:layout_height="57dp"
+        android:background="@android:drawable/ic_delete"
+        app:srcCompat="@android:drawable/ic_menu_delete"
+        tools:layout_editor_absoluteX="317dp"
+        tools:layout_editor_absoluteY="549dp" />
+
+    <ImageButton
+        android:id="@+id/delete6"
+        android:layout_width="62dp"
+        android:layout_height="57dp"
+        android:background="@android:drawable/ic_delete"
+        app:srcCompat="@android:drawable/ic_menu_delete"
+        tools:layout_editor_absoluteX="317dp"
+        tools:layout_editor_absoluteY="647dp" />
+
+</android.support.constraint.ConstraintLayout>

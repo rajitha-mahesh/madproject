@@ -10,6 +10,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MAD">
         <activity
+            android:name=".favourites"
+            android:exported="false" />
+        <activity
+            android:name=".inModule"
+            android:exported="false" />
+        <activity
+            android:name=".confirmModule"
+            android:exported="false" />
+        <activity
+            android:name=".module"
+            android:exported="false" />
+        <activity
+            android:name=".subject"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".forgetPassword"
             android:exported="false" />
         <activity
