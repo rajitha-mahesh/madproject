@@ -22,32 +22,45 @@
 
     <TextView
         android:id="@+id/payvia"
-        android:layout_width="64dp"
+        android:layout_width="92dp"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/bluetextureimage"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="170dp"
         android:layout_marginTop="18dp"
-        android:layout_marginEnd="177dp"
+        android:layout_marginEnd="149dp"
         android:text="Pay via"
         android:textColor="#0B0A0A"
-        android:textSize="20sp" />
+        android:textSize="24sp" />
 
     <Button
-        android:id="@+id/cardpay"
+        android:id="@+id/cardbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView"
+        android:layout_below="@+id/payvia"
+        android:layout_alignStart="@+id/bluetextureimage"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/roundbtn"
+        android:layout_marginStart="163dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="149dp"
+        android:text="Card" />
+
+    <Button
+        android:id="@+id/banktransferbtn"
+        android:layout_width="124dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardbtn"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="159dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="158dp"
-        android:text="Card"
-        android:textColor="#FFFFFF"
-        app:iconTint="#FFFFFF"
-        app:strokeColor="#FFFFFF" />
+        android:background="@drawable/roundbtn"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="132dp"
+        android:text="Bank Transfer"
+        app:shapeAppearanceOverlay="@style/roundbtnview"/>
+
 
 
 </RelativeLayout>
