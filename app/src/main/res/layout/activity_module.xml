@@ -10,41 +10,23 @@
         android:id="@+id/imageView8"
         android:layout_width="38dp"
         android:layout_height="38dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginRight="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="353dp"
+        tools:layout_editor_absoluteY="16dp"
         tools:srcCompat="@tools:sample/avatars" />
 
     <ImageButton
         android:id="@+id/imageButton3"
         android:layout_width="31dp"
         android:layout_height="34dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="289dp"
-        android:layout_marginRight="289dp"
-        android:layout_marginBottom="22dp"
-        app:layout_constraintBottom_toTopOf="@+id/etSearch"
-        app:layout_constraintEnd_toStartOf="@+id/imageView7"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@android:drawable/ic_menu_sort_by_size"
-        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="20dp" />
 
     <EditText
         android:id="@+id/etSerach3"
-        android:layout_width="357dp"
-        android:layout_height="33dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="32dp"
+        android:layout_width="371dp"
+        android:layout_height="34dp"
         android:background="@drawable/search_bg"
         android:drawablePadding="16dp"
         android:ems="10"
@@ -53,116 +35,95 @@
         android:paddingLeft="16dp"
         android:singleLine="true"
         android:textSize="10sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.103"
-        tools:ignore="TouchTargetSizeCheck" />
+        tools:ignore="TouchTargetSizeCheck"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="69dp" />
 
     <Button
         android:id="@+id/b4CM"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginRight="20dp"
-        android:text="Combined Maths"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etSerach3"
-        app:layout_constraintVertical_bias="0.141" />
+        android:layout_width="253dp"
+        android:layout_height="47dp"
+        android:background="#814DDF"
+        android:text="Information Technology"
+        tools:layout_editor_absoluteX="79dp"
+        tools:layout_editor_absoluteY="369dp" />
 
     <Button
-        android:id="@+id/b5Physics"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginRight="20dp"
+        android:id="@+id/b4CM2"
+        android:layout_width="253dp"
+        android:layout_height="47dp"
+        android:background="#814DDF"
         android:text="Physics"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/b4CM"
-        app:layout_constraintVertical_bias="0.067" />
+        tools:layout_editor_absoluteX="79dp"
+        tools:layout_editor_absoluteY="245dp" />
 
     <Button
-        android:id="@+id/b6Chemistry"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginRight="20dp"
+        android:id="@+id/b4CM3"
+        android:layout_width="253dp"
+        android:layout_height="47dp"
+        android:background="#814DDF"
         android:text="Chemistry"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/b5Physics"
-        app:layout_constraintVertical_bias="0.03" />
+        tools:layout_editor_absoluteX="79dp"
+        tools:layout_editor_absoluteY="308dp" />
 
     <Button
-        android:id="@+id/b7Ict"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginRight="20dp"
-        android:text="Information technology"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/b6Chemistry"
-        app:layout_constraintVertical_bias="0.05" />
+        android:id="@+id/b4CM4"
+        android:layout_width="253dp"
+        android:layout_height="47dp"
+        android:background="#814DDF"
+        android:text="Combined Maths"
+        tools:layout_editor_absoluteX="79dp"
+        tools:layout_editor_absoluteY="183dp" />
 
     <View
         android:id="@+id/divider2"
         android:layout_width="409dp"
         android:layout_height="1dp"
-        android:layout_marginTop="53dp"
         android:background="?android:attr/listDivider"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/b7Ict"
-        app:layout_constraintVertical_bias="0.0" />
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="459dp" />
 
     <ImageButton
         android:id="@+id/imageButton2"
         android:layout_width="328dp"
         android:layout_height="213dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="40dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/divider2"
-        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/ad_image"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="SpeakableTextPresentCheck"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="485dp" />
 
     <TextView
         android:id="@+id/tvMathss5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="31dp"
+        android:layout_width="146dp"
+        android:layout_height="30dp"
         android:text="Mathematics"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etSerach3" />
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="131dp" />
 
 </android.support.constraint.ConstraintLayout>
+
+
+
+
+<resources>
+<color name="color_1">#000000</color>
+<color name="color_2">#FFFFFF</color>
+<color name="color_3">#D2D2D2</color>
+<color name="color_4">#4467E3</color>
+<color name="color_5">#CFE8FF</color>
+<color name="color_6">#E6EBF1</color>
+<color name="color_7">#5C50DE</color>
+<color name="color_8">#222B45</color>
+<color name="color_9">#263238</color>
+<color name="color_10">#EBEBEB</color>
+<color name="color_11">#FFC727</color>
+<color name="color_12">#A6A6A6</color>
+<color name="color_13">#222B45</color>
+<color name="color_14">#2C3E50</color>
+<color name="color_15">#5C50DE</color>
+<color name="color_16">#2C2749</color>
+<color name="color_17">#5F5C74</color>
+</resources
