@@ -30,7 +30,7 @@
         android:layout_marginStart="170dp"
         android:layout_marginTop="18dp"
         android:layout_marginEnd="149dp"
-        android:text="Pay via"
+        android:text="@string/pay_via"
         android:textColor="#0B0A0A"
         android:textSize="24sp" />
 
@@ -45,7 +45,7 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="149dp"
         android:background="@drawable/roundbtn"
-        android:text="Card" />
+        android:text="@string/card" />
 
     <Button
         android:id="@+id/banktransferbtn"
@@ -54,12 +54,12 @@
         android:layout_below="@+id/cardbtn"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:background="@drawable/roundbtn"
         android:layout_marginStart="155dp"
         android:layout_marginTop="27dp"
         android:layout_marginEnd="132dp"
-        android:text="Bank Transfer"
-        app:shapeAppearanceOverlay="@style/roundbtnview"/>
+        android:background="@drawable/roundbtn"
+        android:text="@string/bank_t"
+        app:shapeAppearanceOverlay="@style/roundbtnview" />
 
 
 

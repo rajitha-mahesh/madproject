@@ -33,7 +33,7 @@
         android:layout_marginStart="97dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="99dp"
-        android:text="Enter Card Details"
+        android:text="@string/enter_card_detail"
         android:textColor="#0B0A0A"
         android:textSize="24sp" />
 
@@ -45,7 +45,7 @@
         android:layout_alignParentEnd="true"
         android:layout_marginTop="18dp"
         android:layout_marginEnd="248dp"
-        android:text="Card Details"
+        android:text="@string/card_detail"
         android:textColor="#0B0A0A"
         android:textSize="22sp" />
 
@@ -61,7 +61,7 @@
         android:layout_marginEnd="29dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Card Number" />
+        android:text="@string/card_number" />
 
     <EditText
         android:id="@+id/amount"
@@ -75,7 +75,7 @@
         android:layout_marginEnd="24dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Amount" />
+        android:text="@string/amount" />
 
     <EditText
         android:id="@+id/cdholdername"
@@ -89,7 +89,7 @@
         android:layout_marginEnd="24dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Card holder's name" />
+        android:text="@string/card_holder" />
 
     <EditText
         android:id="@+id/month_year"
@@ -103,7 +103,7 @@
         android:layout_marginEnd="206dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="mm/yy" />
+        android:text="@string/mm_yy_" />
 
     <EditText
         android:id="@+id/cvv"
@@ -117,7 +117,7 @@
         android:layout_marginEnd="24dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="CVV" />
+        android:text="@string/cvv" />
 
     <CheckBox
         android:id="@+id/checkBox"
@@ -129,7 +129,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="13dp"
         android:layout_marginEnd="44dp"
-        android:text="save this card for future payments"
+        android:text="@string/save_cd_for_future"
         android:textSize="16sp" />
 
     <Button
@@ -143,7 +143,7 @@
         android:layout_marginTop="9dp"
         android:layout_marginEnd="129dp"
         android:background="@drawable/roundbtn"
-        android:text="Pay" />
+        android:text="@string/pay_card" />
 
     <ImageView
         android:id="@+id/imageView"
