@@ -17,22 +17,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-/*
-        Button changeToCardPay =  findViewById(R.id.cardbtn);
-        changeToCardPay.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                open_activity_enter_cd();
-            }
-        });
-
-    }*/
-   /* public void open_activity_enter_cd(){
-        Intent intent = new Intent(this, EnterCardDetails.class);
-        startActivity(intent);
-    }
-*/
 
         changeToCardPay =  findViewById(R.id.cardbtn);
         changeToBankTransfer =  findViewById(R.id.banktransferbtn);
