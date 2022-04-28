@@ -6,6 +6,39 @@
     android:layout_height="match_parent"
     tools:context=".favourites">
 
+    <ImageButton
+        android:id="@+id/imageButton9"
+        android:layout_width="31dp"
+        android:layout_height="34dp"
+        app:srcCompat="@android:drawable/ic_menu_sort_by_size"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="20dp" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        tools:layout_editor_absoluteX="353dp"
+        tools:layout_editor_absoluteY="20dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <EditText
+        android:id="@+id/etSerach"
+        android:layout_width="371dp"
+        android:layout_height="34dp"
+        android:background="@drawable/search_bg"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:hint="Search for Favourite"
+        android:inputType="textPersonName"
+        android:paddingLeft="16dp"
+        android:singleLine="true"
+        android:textSize="10sp"
+        tools:ignore="TouchTargetSizeCheck"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="66dp" />
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="120dp"
@@ -18,7 +51,9 @@
         android:id="@+id/imageView2"
         android:layout_width="120dp"
         android:layout_height="78dp"
-        tools:layout_editor_absoluteX="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="252dp"
         tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
@@ -53,13 +88,6 @@
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="637dp"
         tools:srcCompat="@tools:sample/backgrounds/scenic" />
-
-    <SearchView
-        android:id="@+id/sSearch"
-        android:layout_width="369dp"
-        android:layout_height="50dp"
-        tools:layout_editor_absoluteX="21dp"
-        tools:layout_editor_absoluteY="54dp" />
 
     <Button
         android:id="@+id/bDescription1"
@@ -125,7 +153,7 @@
         android:background="@android:drawable/ic_delete"
         app:srcCompat="@android:drawable/ic_menu_delete"
         tools:layout_editor_absoluteX="317dp"
-        tools:layout_editor_absoluteY="273dp" />
+        tools:layout_editor_absoluteY="266dp" />
 
     <ImageButton
         android:id="@+id/delete3"
@@ -143,7 +171,7 @@
         android:background="@android:drawable/ic_delete"
         app:srcCompat="@android:drawable/ic_menu_delete"
         tools:layout_editor_absoluteX="317dp"
-        tools:layout_editor_absoluteY="449dp" />
+        tools:layout_editor_absoluteY="549dp" />
 
     <ImageButton
         android:id="@+id/delete5"
@@ -152,7 +180,7 @@
         android:background="@android:drawable/ic_delete"
         app:srcCompat="@android:drawable/ic_menu_delete"
         tools:layout_editor_absoluteX="317dp"
-        tools:layout_editor_absoluteY="549dp" />
+        tools:layout_editor_absoluteY="457dp" />
 
     <ImageButton
         android:id="@+id/delete6"
@@ -162,5 +190,16 @@
         app:srcCompat="@android:drawable/ic_menu_delete"
         tools:layout_editor_absoluteX="317dp"
         tools:layout_editor_absoluteY="647dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Favourites"
+        android:textColor="#040404"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="21dp"
+        tools:layout_editor_absoluteY="117dp" />
 
 </android.support.constraint.ConstraintLayout>

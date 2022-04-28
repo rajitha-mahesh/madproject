@@ -108,22 +108,3 @@
 
 
 
-<resources>
-<color name="color_1">#000000</color>
-<color name="color_2">#FFFFFF</color>
-<color name="color_3">#D2D2D2</color>
-<color name="color_4">#4467E3</color>
-<color name="color_5">#CFE8FF</color>
-<color name="color_6">#E6EBF1</color>
-<color name="color_7">#5C50DE</color>
-<color name="color_8">#222B45</color>
-<color name="color_9">#263238</color>
-<color name="color_10">#EBEBEB</color>
-<color name="color_11">#FFC727</color>
-<color name="color_12">#A6A6A6</color>
-<color name="color_13">#222B45</color>
-<color name="color_14">#2C3E50</color>
-<color name="color_15">#5C50DE</color>
-<color name="color_16">#2C2749</color>
-<color name="color_17">#5F5C74</color>
-</resources
