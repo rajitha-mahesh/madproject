@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UserProfile">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="261dp"
+        android:background="#F54623C6"
+        android:padding="20dp">
+
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/n" />
+
+        <TextView
+            android:id="@+id/full_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/profile_image"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="-160dp"
+            android:layout_marginBottom="84dp"
+            android:includeFontPadding="false"
+            android:text="Namila preshan"
+            android:textColor="#050000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/Update_porfile"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="129dp"
+            android:text="Profile"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="379dp"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="360dp"
+            android:layout_height="48dp"
+            android:backgroundTint="#AB8C8C93"
+            android:text="Edit Profile"
+            android:textAlignment="viewStart" />
+
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="396dp"
+            android:layout_height="48dp"
+            android:layout_below="@+id/button1"
+            android:layout_marginTop="2dp"
+            android:backgroundTint="#AB8C8C93"
+            android:text="Payments"
+            android:textAlignment="viewStart" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="395dp"
+            android:layout_height="48dp"
+            android:layout_below="@+id/button2"
+            android:layout_marginTop="2dp"
+            android:backgroundTint="#AB8C8C93"
+            android:text="Favorites"
+            android:textAlignment="viewStart" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="396dp"
+            android:layout_height="48dp"
+            android:layout_below="@+id/button3"
+            android:layout_marginTop="2dp"
+            android:backgroundTint="#AB8C8C93"
+            android:text="Downloads"
+            android:textAlignment="viewStart" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="395dp"
+            android:layout_height="48dp"
+            android:layout_below="@+id/button4"
+            android:layout_marginTop="2dp"
+            android:backgroundTint="#AB8C8C93"
+            android:text="Feedback"
+            android:textAlignment="viewStart" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="396dp"
+            android:layout_height="48dp"
+            android:layout_below="@+id/button5"
+            android:layout_marginTop="2dp"
+            android:backgroundTint="#AB8C8C93"
+            android:text="Help Center"
+            android:textAlignment="viewStart" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="395dp"
+            android:layout_height="48dp"
+            android:layout_below="@+id/button6"
+            android:layout_marginTop="2dp"
+            android:backgroundTint="#AB8C8C93"
+            android:text="Setting"
+            android:textAlignment="viewStart" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="280dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/button7"
+        android:layout_marginLeft="58dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#AB8C8C93"
+        android:text="Log Out" />
+
+</LinearLayout>
