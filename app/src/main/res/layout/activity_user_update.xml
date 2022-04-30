@@ -17,9 +17,11 @@
 
         <TextView
             android:id="@+id/Update_porfile"
-            android:layout_width="wrap_content"
-            android:layout_height="44dp"
+            android:layout_width="183dp"
+            android:layout_height="41dp"
+            android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
+            android:layout_marginStart="107dp"
             android:layout_marginEnd="101dp"
             android:text="Update Profile"
             android:textColor="#000000"
