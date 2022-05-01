@@ -10,6 +10,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MADProjectUserInterface">
         <activity
+            android:name=".Subject"
+            android:exported="false" />
+        <activity
+            android:name=".Module"
+            android:exported="false" />
+        <activity
+            android:name=".InModule"
+            android:exported="false" />
+        <activity
+            android:name=".FogrtPassword"
+            android:exported="false" />
+        <activity
+            android:name=".Favourites"
+            android:exported="false" />
+        <activity
+            android:name=".ConfirmPassword"
+            android:exported="false" />
+        <activity
+            android:name=".ChangePassword"
+            android:exported="false" />
+        <activity
             android:name=".student_payment_details"
             android:exported="false" />
         <activity
