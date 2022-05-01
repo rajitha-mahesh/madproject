@@ -3,15 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/android studio workspace/MADprojectuserinterface/app/src/main/res/drawable/btn_shape.xml" value="0.129" />
-        <entry key="..\:/android studio workspace/MADprojectuserinterface/app/src/main/res/drawable/cornerbtn.xml" value="0.256" />
-        <entry key="..\:/android studio workspace/MADprojectuserinterface/app/src/main/res/drawable/home_btn.xml" value="0.1995" />
-        <entry key="..\:/android studio workspace/MADprojectuserinterface/app/src/main/res/drawable/roundbtn.xml" value="0.126" />
-        <entry key="..\:/android studio workspace/MADprojectuserinterface/app/src/main/res/layout/activity_enter_card_details.xml" value="0.1641337386018237" />
-        <entry key="..\:/android studio workspace/MADprojectuserinterface/app/src/main/res/layout/activity_enter_transfer_detaill.xml" value="0.25416666666666665" />
-        <entry key="..\:/android studio workspace/MADprojectuserinterface/app/src/main/res/layout/activity_main.xml" value="0.16" />
-        <entry key="..\:/android studio workspace/MADprojectuserinterface/app/src/main/res/layout/activity_main_home.xml" value="0.264" />
-        <entry key="..\:/android studio workspace/MADprojectuserinterface/app/src/main/res/layout/activity_student_payment_details.xml" value="0.24365942028985507" />
+        <entry key="..\:/A    SLIIT/year 2/sem 2/MAD/github/madproject/app/src/main/res/drawable/module_page_btn.xml" value="0.1295" />
+        <entry key="..\:/A    SLIIT/year 2/sem 2/MAD/github/madproject/app/src/main/res/layout/activity_change_password.xml" value="0.1765625" />
+        <entry key="..\:/A    SLIIT/year 2/sem 2/MAD/github/madproject/app/src/main/res/layout/activity_confirm_password.xml" value="0.1765625" />
+        <entry key="..\:/A    SLIIT/year 2/sem 2/MAD/github/madproject/app/src/main/res/layout/activity_favourites.xml" value="0.1" />
+        <entry key="..\:/A    SLIIT/year 2/sem 2/MAD/github/madproject/app/src/main/res/layout/activity_fogrt_password.xml" value="0.1765625" />
+        <entry key="..\:/A    SLIIT/year 2/sem 2/MAD/github/madproject/app/src/main/res/layout/activity_in_module.xml" value="0.1765625" />
+        <entry key="..\:/A    SLIIT/year 2/sem 2/MAD/github/madproject/app/src/main/res/layout/activity_main_home.xml" value="0.1765625" />
+        <entry key="..\:/A    SLIIT/year 2/sem 2/MAD/github/madproject/app/src/main/res/layout/activity_module.xml" value="0.1765625" />
+        <entry key="..\:/A    SLIIT/year 2/sem 2/MAD/github/madproject/app/src/main/res/layout/activity_subject.xml" value="0.2" />
       </map>
     </option>
   </component>
