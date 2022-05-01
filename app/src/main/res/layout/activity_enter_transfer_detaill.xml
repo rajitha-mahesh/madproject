@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EnterCardDetails">
-
+    tools:context=".enter_transfer_detaill">
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/bluetextureimage"
@@ -14,10 +13,10 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="18dp"
-        android:layout_marginTop="170dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="194dp"
         android:layout_marginEnd="5dp"
-        android:layout_marginBottom="81dp"
+        android:layout_marginBottom="57dp"
         android:adjustViewBounds="true"
         android:scaleType="fitCenter"
         android:src="@drawable/bluebackground"
@@ -25,27 +24,27 @@
 
     <TextView
         android:id="@+id/entercdetail"
-        android:layout_width="197dp"
+        android:layout_width="240dp"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/bluetextureimage"
         android:layout_alignTop="@+id/bluetextureimage"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="97dp"
+        android:layout_alignEnd="@+id/bluetextureimage"
+        android:layout_marginStart="76dp"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="99dp"
-        android:text="@string/enter_card_detail"
+        android:layout_marginEnd="64dp"
+        android:text="@string/enter_transfer_detail"
         android:textColor="#0B0A0A"
         android:textSize="24sp" />
 
     <TextView
-        android:id="@+id/carddetail"
+        android:id="@+id/slipdetail"
         android:layout_width="132dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/entercdetail"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="18dp"
         android:layout_marginEnd="248dp"
-        android:text="@string/card_detail"
+        android:text="@string/slip_detail"
         android:textColor="#0B0A0A"
         android:textSize="22sp" />
 
@@ -61,76 +60,35 @@
         android:layout_marginEnd="29dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="@string/card_number" />
+        android:text="@string/account_no" />
 
     <EditText
-        android:id="@+id/amount"
+        android:id="@+id/name"
         android:layout_width="334dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/entercdetail"
         android:layout_alignStart="@+id/bluetextureimage"
         android:layout_alignEnd="@+id/bluetextureimage"
-        android:layout_marginStart="22dp"
-        android:layout_marginTop="308dp"
-        android:layout_marginEnd="24dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="109dp"
+        android:layout_marginEnd="27dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="@string/amount" />
+        android:text="@string/name" />
 
     <EditText
-        android:id="@+id/cdholdername"
-        android:layout_width="335dp"
-        android:layout_height="60dp"
-        android:layout_below="@+id/cardno"
+        android:id="@+id/amount"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/entercdetail"
         android:layout_alignStart="@+id/bluetextureimage"
         android:layout_alignEnd="@+id/bluetextureimage"
         android:layout_marginStart="21dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="24dp"
+        android:layout_marginTop="266dp"
+        android:layout_marginEnd="167dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="@string/card_holder" />
-
-    <EditText
-        android:id="@+id/month_year"
-        android:layout_width="wrap_content"
-        android:layout_height="56dp"
-        android:layout_below="@+id/cardno"
-        android:layout_alignStart="@+id/bluetextureimage"
-        android:layout_alignEnd="@+id/bluetextureimage"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="83dp"
-        android:layout_marginEnd="206dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/mm_yy_" />
-
-    <EditText
-        android:id="@+id/cvv"
-        android:layout_width="159dp"
-        android:layout_height="56dp"
-        android:layout_below="@+id/cardno"
-        android:layout_alignStart="@+id/bluetextureimage"
-        android:layout_alignEnd="@+id/bluetextureimage"
-        android:layout_marginStart="197dp"
-        android:layout_marginTop="81dp"
-        android:layout_marginEnd="24dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/cvv" />
-
-    <CheckBox
-        android:id="@+id/checkBox"
-        android:layout_width="wrap_content"
-        android:layout_height="47dp"
-        android:layout_below="@+id/month_year"
-        android:layout_alignStart="@+id/bluetextureimage"
-        android:layout_alignEnd="@+id/bluetextureimage"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="13dp"
-        android:layout_marginEnd="44dp"
-        android:text="@string/save_cd_for_future"
-        android:textSize="16sp" />
+        android:text="@string/amount" />
 
     <Button
         android:id="@+id/paycd"
@@ -143,18 +101,25 @@
         android:layout_marginTop="9dp"
         android:layout_marginEnd="129dp"
         android:background="@drawable/roundbtn"
-        android:text="@string/pay_card" />
+        android:text="@string/pay_transfer" />
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="200dp"
-        android:layout_height="125dp"
+        android:id="@+id/imageView2"
+        android:layout_width="211dp"
+        android:layout_height="165dp"
+
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="37dp"
-        android:layout_marginEnd="11dp"
-        android:layout_marginBottom="45dp"
-        app:srcCompat="@drawable/cardpay" />
+        android:layout_marginStart="194dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="29dp"
+        app:srcCompat="@drawable/banktransfer" />
+
+    <!--box to upload sliip. using choose file
+    -->
+
 
 
 </RelativeLayout>
