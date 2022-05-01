@@ -132,7 +132,7 @@
         android:textSize="18dp"/>
 
     <EditText
-        android:id="@+id/pass"
+        android:id="@+id/password"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_below="@+id/tx_pass"
@@ -148,7 +148,7 @@
         style="@style/Base.CardView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/pass"
+        android:layout_below="@+id/password"
         android:layout_marginLeft="70dp"
         android:layout_marginTop="10dp"
         android:text="Conform Password"
@@ -158,7 +158,7 @@
 
 
     <EditText
-        android:id="@+id/Con_pass"
+        android:id="@+id/confirm_password"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_below="@+id/tx_Con_pass"
@@ -170,10 +170,10 @@
         android:textColorHint="@color/white" />
 
     <Button
-        android:id="@+id/signup_btn"
+        android:id="@+id/sign_up"
         android:layout_width="200dp"
         android:layout_height="48dp"
-        android:layout_below="@id/Con_pass"
+        android:layout_below="@id/confirm_password"
         android:layout_marginLeft="99dp"
         android:layout_marginTop="30dp"
         android:background="@drawable/btn_shape"
@@ -182,24 +182,24 @@
 
     <TextView
         android:id="@+id/tx_2"
+        style="@style/Base.CardView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="2dp"
+        android:layout_below="@+id/sign_up"
         android:layout_marginLeft="120dp"
-        android:layout_below="@+id/signup_btn"
+        android:layout_marginTop="2dp"
         android:text="already have an account?"
         android:textColor="@color/black"
-        style="@style/Base.CardView"
-        android:textSize="13dp"/>
+        android:textSize="13dp" />
 
     <TextView
-        android:id="@+id/tx_3"
+        android:id="@+id/txt_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="6dp"
         android:layout_marginLeft="180dp"
         android:layout_below="@+id/tx_2"
-        android:text="Login"
+        android:text="Sign In"
         android:textColor="@color/black"
         android:textSize="13dp"/>
 
