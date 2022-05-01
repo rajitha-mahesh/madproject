@@ -11,7 +11,12 @@
         <entry key="..\:/android studio workspace/MADprojectuserinterface/app/src/main/res/layout/activity_enter_transfer_detaill.xml" value="0.25416666666666665" />
         <entry key="..\:/android studio workspace/MADprojectuserinterface/app/src/main/res/layout/activity_main.xml" value="0.16" />
         <entry key="..\:/android studio workspace/MADprojectuserinterface/app/src/main/res/layout/activity_main_home.xml" value="0.264" />
+        <entry key="..\:/android studio workspace/MADprojectuserinterface/app/src/main/res/layout/activity_sign_up.xml" value="0.25416666666666665" />
+        <entry key="..\:/android studio workspace/MADprojectuserinterface/app/src/main/res/layout/activity_start.xml" value="0.25416666666666665" />
         <entry key="..\:/android studio workspace/MADprojectuserinterface/app/src/main/res/layout/activity_student_payment_details.xml" value="0.24365942028985507" />
+        <entry key="..\:/android studio workspace/MADprojectuserinterface/app/src/main/res/layout/activity_user_profile.xml" value="0.25416666666666665" />
+        <entry key="..\:/android studio workspace/MADprojectuserinterface/app/src/main/res/layout/activity_user_update.xml" value="0.25416666666666665" />
+        <entry key="..\:/android studio workspace/MADprojectuserinterface/app/src/main/res/layout/recyclerview_of_payments.xml" value="0.4" />
       </map>
     </option>
   </component>
