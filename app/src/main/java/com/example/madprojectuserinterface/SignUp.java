@@ -12,43 +12,61 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.madprojectuserinterface.models.User;
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 public class SignUp extends AppCompatActivity {
 
-    private EditText email;
-    private EditText password;
     private Button register;
-    private FirebaseAuth auth;
     private TextView txtSignIn;
+    FirebaseFirestore db = FirebaseFirestore.getInstance();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
 
-        email = findViewById(R.id.email);
-        password = findViewById(R.id.password);
         register = findViewById(R.id.sign_up);
         txtSignIn = findViewById(R.id.txt_login);
-
-        auth = FirebaseAuth.getInstance();
 
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String txt_email = email.getText().toString();
-                String txt_password = password.getText().toString();
 
-                if (TextUtils.isEmpty(txt_email) || TextUtils.isEmpty(txt_password)) {
-                    Toast.makeText(SignUp.this, "Empty credentials!", Toast.LENGTH_SHORT).show();
-                } else if (txt_password.length() < 6) {
-                    Toast.makeText(SignUp.this, "Password too short!", Toast.LENGTH_SHORT).show();
+                EditText name = (EditText) findViewById(R.id.name);
+                EditText email = (EditText) findViewById(R.id.email);
+                EditText phoneNumber = (EditText) findViewById(R.id.phone_number);
+                EditText age = (EditText) findViewById(R.id.age);
+                EditText gender = (EditText) findViewById(R.id.gender);
+                EditText password = (EditText) findViewById(R.id.password);
+                EditText confirmPassword = (EditText) findViewById(R.id.confirm_password);
+
+                if (TextUtils.isEmpty(name.getText().toString())) {
+                    Toast.makeText(SignUp.this, "Name cannot be empty", Toast.LENGTH_SHORT).show();
+                }else if (TextUtils.isEmpty(email.getText().toString())) {
+                    Toast.makeText(SignUp.this, "Email cannot be empty", Toast.LENGTH_SHORT).show();
+                }  else if (TextUtils.isEmpty(phoneNumber.getText().toString())) {
+                    Toast.makeText(SignUp.this, "Mobile number cannot be empty", Toast.LENGTH_SHORT).show();
+                } else if (TextUtils.isEmpty(age.getText().toString())) {
+                    Toast.makeText(SignUp.this, "Age cannot be empty", Toast.LENGTH_SHORT).show();
+                }  else if (TextUtils.isEmpty(gender.getText().toString())) {
+                    Toast.makeText(SignUp.this, "Gender cannot be empty", Toast.LENGTH_SHORT).show();
+                } else if (TextUtils.isEmpty(password.getText().toString())) {
+                    Toast.makeText(SignUp.this, "Password cannot be empty", Toast.LENGTH_SHORT).show();
+                } else if (TextUtils.isEmpty(confirmPassword.getText().toString())) {
+                    Toast.makeText(SignUp.this, "Confirm password cannot be empty", Toast.LENGTH_SHORT).show();
+                } else if (!password.getText().toString().equals(confirmPassword.getText().toString())) {
+                    Toast.makeText(SignUp.this, "Password didn't match.",
+                            Toast.LENGTH_SHORT).show();
                 } else {
-                    signUpUser(txt_email, txt_password);
+                    signUpUser(email.getText().toString(), password.getText().toString());
                 }
             }
         });
@@ -71,18 +89,59 @@ public class SignUp extends AppCompatActivity {
 
     private void signUpUser(String txt_email, String txt_password) {
 
-        auth.createUserWithEmailAndPassword(txt_email, txt_password).addOnCompleteListener(SignUp.this, new OnCompleteListener<AuthResult>() {
+        FirebaseAuth mAuth;
+        mAuth = FirebaseAuth.getInstance();
+
+        mAuth.createUserWithEmailAndPassword(txt_email, txt_password).addOnCompleteListener(SignUp.this, new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
 
                 if (task.isSuccessful()) {
-                    Toast.makeText(SignUp.this, "Registering user successful!", Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(SignUp.this, MainHome.class));
-                    finish();
+                    // Sign in success, update UI with the signed-in user's information
+                    Toast.makeText(SignUp.this, "Authentication Success.",
+                            Toast.LENGTH_SHORT).show();
+//                    startActivity(new Intent(SignUp.this, MainHome.class));
+//                    finish();
+                    saveUserDetails(txt_email, mAuth.getCurrentUser().getUid());
                 } else {
-                    Toast.makeText(SignUp.this, "Registration failed!", Toast.LENGTH_SHORT).show();
+                    // If sign in fails, display a message to the user.
+                    Toast.makeText(SignUp.this, "Authentication failed.",
+                            Toast.LENGTH_SHORT).show();
                 }
             }
         });
+    }
+
+    public void saveUserDetails(String email, String userId) {
+        EditText name = (EditText) findViewById(R.id.name);
+        EditText phoneNumber = (EditText) findViewById(R.id.phone_number);
+        EditText age = (EditText) findViewById(R.id.age);
+        EditText gender = (EditText) findViewById(R.id.gender);
+
+        User user = new User();
+        user.setId(userId);
+        user.setName(name.getText().toString());
+        user.setPhoneNumber(phoneNumber.getText().toString());
+        user.setAge(age.getText().toString());
+        user.setGender(gender.getText().toString());
+        user.setEmail(email.trim());
+
+        DocumentReference documentReference = db.collection("users").document(userId);
+
+        documentReference.set(user)
+                .addOnSuccessListener(new OnSuccessListener<Void>() {
+                    @Override
+                    public void onSuccess(Void unused) {
+                        startActivity(new Intent(getApplicationContext(), MainHome.class));
+                    }
+                })
+
+                .addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        Toast.makeText(SignUp.this, "Authentication failed.",
+                                Toast.LENGTH_SHORT).show();
+                    }
+                });
     }
 }
