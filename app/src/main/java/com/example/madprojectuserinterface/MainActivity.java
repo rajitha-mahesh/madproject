@@ -1,22 +1,40 @@
 package com.example.madprojectuserinterface;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.view.GravityCompat;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.widget.Toolbar;
+import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toolbar;
+
+import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity {
 
     private Button changeToCardPay;
     private Button changeToBankTransfer;
-    private DrawerLayout drawer;
+    DrawerLayout drawerLayout;
+    NavigationView navigationView;
+    Toolbar toolbar;
+    ActionBarDrawerToggle actionBarDrawerToggle;
 
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+
+        if(actionBarDrawerToggle.onOptionsItemSelected(item)) {
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
 
 
 
@@ -26,15 +44,30 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //nav bar
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        drawerLayout = findViewById(R.id.drawer_layout);
+        navigationView = findViewById(R.id.navigationView);
+        actionBarDrawerToggle = new ActionBarDrawerToggle(this,drawerLayout, R.string.menu_open, R.string.menu_close);
+        drawerLayout.addDrawerListener(actionBarDrawerToggle);
+        actionBarDrawerToggle.syncState();
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
-        drawer = findViewById(R.id.drawer_layout);
+                switch (item.getItemId()){
+                    case R.id.nav_home:
+                        Log.i("MENU_DRAWER_TAG","Home item is clicked");
+                        drawerLayout.closeDrawer(GravityCompat.START);
+                        break;
 
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer,toolbar,
-                R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        drawer.addDrawerListener(toggle);
-        toggle.syncState();
+                    case R.id.nav_profile:
+                        Log.i("MENU_DRAWER_TAG","profile item is clicked");
+                        drawerLayout.closeDrawer(GravityCompat.START);
+                }
+
+                return true;
+            }
+        });
 
 
         changeToCardPay =  findViewById(R.id.cardbtn);
@@ -58,13 +91,4 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-        @Override
-        public void onBackPressed() {
-            if (drawer.isDrawerOpen(GravityCompat.START)) {
-                drawer.closeDrawer(GravityCompat.START);
-            }else {
-                super.onBackPressed();
-            }
-
-    }
 }
