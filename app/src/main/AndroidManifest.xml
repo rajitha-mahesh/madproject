@@ -50,6 +50,7 @@
             android:exported="false" />
         <activity
             android:name=".MainHome"
+            android:theme="@style/AppTheme.NoActionBar"
             android:exported="false" />
         <activity
             android:name=".SignUp"
