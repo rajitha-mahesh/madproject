@@ -3,25 +3,29 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/SLIIT/2nd Year/2nd semester/MAD/Github/madproject/app/src/main/res/layout/activity_enter_transfer_detaill.xml" value="0.209375" />
-        <entry key="..\:/SLIIT/2nd Year/2nd semester/MAD/Github/madproject/app/src/main/res/layout/activity_favourites.xml" value="0.209375" />
-        <entry key="..\:/SLIIT/2nd Year/2nd semester/MAD/Github/madproject/app/src/main/res/layout/activity_fogrt_password.xml" value="0.209375" />
-        <entry key="..\:/SLIIT/2nd Year/2nd semester/MAD/Github/madproject/app/src/main/res/layout/activity_in_module.xml" value="0.209375" />
-        <entry key="..\:/SLIIT/2nd Year/2nd semester/MAD/Github/madproject/app/src/main/res/layout/activity_login.xml" value="0.25" />
-        <entry key="..\:/SLIIT/2nd Year/2nd semester/MAD/Github/madproject/app/src/main/res/layout/activity_main.xml" value="0.209375" />
+        <entry key="..\:/A    SLIIT/year 2/sem 2/MAD/github/madproject/app/src/main/res/drawable/module_page_btn.xml" value="0.1295" />
+        <entry key="..\:/A    SLIIT/year 2/sem 2/MAD/github/madproject/app/src/main/res/layout/activity_change_password.xml" value="0.1765625" />
+        <entry key="..\:/A    SLIIT/year 2/sem 2/MAD/github/madproject/app/src/main/res/layout/activity_confirm_password.xml" value="0.1765625" />
+        <entry key="..\:/A    SLIIT/year 2/sem 2/MAD/github/madproject/app/src/main/res/layout/activity_favourites.xml" value="0.1" />
+        <entry key="..\:/A    SLIIT/year 2/sem 2/MAD/github/madproject/app/src/main/res/layout/activity_fogrt_password.xml" value="0.1765625" />
+        <entry key="..\:/A    SLIIT/year 2/sem 2/MAD/github/madproject/app/src/main/res/layout/activity_in_module.xml" value="0.1765625" />
+        <entry key="..\:/A    SLIIT/year 2/sem 2/MAD/github/madproject/app/src/main/res/layout/activity_main_home.xml" value="0.1765625" />
+        <entry key="..\:/A    SLIIT/year 2/sem 2/MAD/github/madproject/app/src/main/res/layout/activity_module.xml" value="0.1765625" />
+        <entry key="..\:/A    SLIIT/year 2/sem 2/MAD/github/madproject/app/src/main/res/layout/activity_subject.xml" value="0.2" />
+        <entry key="..\:/SLIIT/2nd Year/2nd semester/MAD/Github/madproject/app/src/main/res/layout/activity_change_password.xml" value="0.13333333333333333" />
+        <entry key="..\:/SLIIT/2nd Year/2nd semester/MAD/Github/madproject/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/SLIIT/2nd Year/2nd semester/MAD/Github/madproject/app/src/main/res/layout/activity_main_home.xml" value="0.22" />
-        <entry key="..\:/SLIIT/2nd Year/2nd semester/MAD/Github/madproject/app/src/main/res/layout/activity_module.xml" value="0.209375" />
-        <entry key="..\:/SLIIT/2nd Year/2nd semester/MAD/Github/madproject/app/src/main/res/layout/activity_sign_up.xml" value="0.209375" />
-        <entry key="..\:/SLIIT/2nd Year/2nd semester/MAD/Github/madproject/app/src/main/res/layout/activity_start.xml" value="0.209375" />
-        <entry key="..\:/SLIIT/2nd Year/2nd semester/MAD/Github/madproject/app/src/main/res/layout/activity_student_payment_details.xml" value="0.209375" />
-        <entry key="..\:/SLIIT/2nd Year/2nd semester/MAD/Github/madproject/app/src/main/res/layout/activity_subject.xml" value="0.209375" />
-        <entry key="..\:/SLIIT/2nd Year/2nd semester/MAD/Github/madproject/app/src/main/res/layout/activity_user_profile.xml" value="0.22" />
-        <entry key="..\:/SLIIT/2nd Year/2nd semester/MAD/Github/madproject/app/src/main/res/layout/activity_user_update.xml" value="0.22" />
-        <entry key="..\:/SLIIT/2nd Year/2nd semester/MAD/Github/madproject/app/src/main/res/layout/nav_header.xml" value="0.18802083333333333" />
-        <entry key="..\:/SLIIT/2nd Year/2nd semester/MAD/Github/madproject/app/src/main/res/menu/drawer_menu.xml" value="0.18802083333333333" />
+        <entry key="..\:/SLIIT/2nd Year/2nd semester/MAD/Github/madproject/app/src/main/res/layout/activity_user_profile.xml" value="0.209375" />
+        <entry key="..\:/SLIIT/2nd Year/2nd semester/MAD/Github/madproject/app/src/main/res/layout/activity_user_update.xml" value="0.1388888888888889" />
+        <entry key="..\:/SLIIT/2nd Year/2nd semester/MAD/Github/madproject/app/src/main/res/layout/nav_header.xml" value="0.2" />
+        <entry key="..\:/SLIIT/2nd Year/2nd semester/MAD/Github/madproject/app/src/main/res/menu/drawer_menu.xml" value="0.22" />
       </map>
     </option>
   </component>
-  <component name="ExternalStorageConfigurationManager" enabled="true" />
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
 </project>
