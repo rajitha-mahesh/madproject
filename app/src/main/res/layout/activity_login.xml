@@ -143,7 +143,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/google_btn"
-                android:layout_marginLeft="120dp"
+                android:layout_marginLeft="140dp"
                 android:layout_marginTop="2dp"
                 android:text="Don\'t have an account yet?"
                 android:textColor="@color/black"

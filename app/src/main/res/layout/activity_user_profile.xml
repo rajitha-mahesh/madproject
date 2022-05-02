@@ -60,7 +60,7 @@
 
         <Button
             android:id="@+id/button1"
-            android:layout_width="360dp"
+            android:layout_width="376dp"
             android:layout_height="48dp"
             android:backgroundTint="#AB8C8C93"
             android:text="Edit Profile"
