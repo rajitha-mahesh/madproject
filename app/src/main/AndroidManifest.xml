@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MADProjectUserInterface">
         <activity
+            android:name=".TestMenu"
+            android:exported="false" />
+        <activity
             android:name=".Subject"
             android:exported="false" />
         <activity
@@ -50,8 +53,8 @@
             android:exported="false" />
         <activity
             android:name=".MainHome"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".SignUp"
             android:exported="false" />

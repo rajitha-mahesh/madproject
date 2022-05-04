@@ -14,52 +14,48 @@ import android.view.MenuItem;
 
 import com.google.android.material.navigation.NavigationView;
 
-public class MainHome extends AppCompatActivity {
+public class TestMenu extends AppCompatActivity {
 
     DrawerLayout drawerLayout;
     NavigationView navigationView;
-    Toolbar toolbar;
     ActionBarDrawerToggle actionBarDrawerToggle;
-    ActionBar actionBar;
 
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-
-        if(actionBarDrawerToggle.onOptionsItemSelected(item)) {
-            return true;
+        if(actionBarDrawerToggle.onOptionsItemSelected(item))
+        {
+          return true;
         }
-
         return super.onOptionsItemSelected(item);
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_home);
+        setContentView(R.layout.activity_test_menu);
+
 
         //nav bar
-        toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
         drawerLayout = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.navigationView);
-        actionBarDrawerToggle = new ActionBarDrawerToggle(this,drawerLayout, toolbar, R.string.menu_open, R.string.menu_close);
+        actionBarDrawerToggle = new ActionBarDrawerToggle(this,drawerLayout, R.string.menu_open, R.string.menu_close);
         drawerLayout.addDrawerListener(actionBarDrawerToggle);
         actionBarDrawerToggle.syncState();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
-                switch (item.getItemId())
-                {
+                switch (item.getItemId()) {
                     case R.id.nav_home:
-                        Log.i("MENU_DRAWER_TAG","Home item is clicked");
+                        Log.i("MENU_DRAWER_TAG", "Home item is clicked");
                         drawerLayout.closeDrawer(GravityCompat.START);
                         break;
 
                     case R.id.nav_profile:
-                        Log.i("MENU_DRAWER_TAG","profile item is clicked");
+                        Log.i("MENU_DRAWER_TAG", "profile item is clicked");
                         drawerLayout.closeDrawer(GravityCompat.START);
                 }
 
@@ -68,4 +64,5 @@ public class MainHome extends AppCompatActivity {
         });
 
     }
+
 }
