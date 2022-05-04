@@ -10,18 +10,19 @@
     tools:context=".MainHome"
     tools:openDrawer="start">
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
         <androidx.appcompat.widget.Toolbar
+            app:navigationIcon="@drawable/ic_baseline_menu_24"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:id="@+id/toolbar"
-            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-            android:elevation="4dp"/>
+            android:background="@color/purple_500"
+            />
 
         <FrameLayout
             android:id="@+id/fragment_container"
@@ -62,12 +63,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
+            android:layout_marginTop="50dp"
             android:paddingBottom="50dp">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/search_bar"
+                android:layout_below="@+id/toolbar"
                 android:layout_marginLeft="35dp"
                 android:padding="10dp"
                 android:text="Subject"
