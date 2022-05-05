@@ -17,10 +17,7 @@
             android:exported="false" />
         <activity
             android:name=".TestModule1"
-            android:exported="false" />
-        <activity
-            android:name=".Subject"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".Module"
             android:exported="true" />
@@ -32,9 +29,6 @@
             android:exported="false" />
         <activity
             android:name=".Favourites"
-            android:exported="false" />
-        <activity
-            android:name=".Popup"
             android:exported="false" />
         <activity
             android:name=".ChangePassword"

@@ -21,13 +21,13 @@ public class PopUp extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pop_up);
+        setContentView(R.layout.activity_test_module1);
 
-        ShowDialog = findViewById(R.id.dialog_btn);
+        ShowDialog = findViewById(R.id.com_mths_btn);
 
         //Create the Dialog here
         dialog = new Dialog(this);
-        dialog.setContentView(R.layout.activity_confirm_password);
+        dialog.setContentView(R.layout.activity_popup);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             dialog.getWindow().setBackgroundDrawable(getDrawable(R.drawable.custom_dialog_background));
         }
