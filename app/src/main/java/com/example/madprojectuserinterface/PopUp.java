@@ -27,7 +27,7 @@ public class PopUp extends AppCompatActivity {
 
         //Create the Dialog here
         dialog = new Dialog(this);
-        dialog.setContentView(R.layout.activity_popup);
+        dialog.setContentView(R.layout.activity_confirm_password);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             dialog.getWindow().setBackgroundDrawable(getDrawable(R.drawable.custom_dialog_background));
         }

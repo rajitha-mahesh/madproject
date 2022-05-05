@@ -10,9 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MADProjectUserInterface">
         <activity
-            android:name=".Commerce"
-            android:exported="false" />
-        <activity
             android:name=".Subject"
             android:exported="false" />
         <activity
