@@ -233,6 +233,7 @@
                 android:layout_height="48dp"
                 android:layout_below="@id/confirm_password"
                 android:layout_marginLeft="99dp"
+                android:layout_centerVertical="true"
                 android:layout_marginTop="30dp"
                 android:background="@drawable/btn_shape"
                 android:text="Sign Up"
@@ -259,7 +260,7 @@
                 android:layout_marginTop="6dp"
                 android:text="Sign In"
                 android:textColor="@color/black"
-                android:textSize="13dp" />
+                android:textSize="15dp" />
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>
