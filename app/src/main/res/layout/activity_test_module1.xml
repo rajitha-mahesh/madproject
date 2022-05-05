@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:id="@+id/drawer_layout"
     android:fitsSystemWindows="true"
-    tools:context=".TestModule"
+    tools:context=".TestModule1"
     tools:openDrawer="start">
 
     <ScrollView
@@ -40,6 +40,15 @@
                 android:textColor="#000000"
                 android:textSize="30sp"
                 android:textStyle="bold|italic" />
+
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="179dp"
+                android:layout_height="2dp"
+                android:layout_below="@id/bio"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="?android:attr/listDivider" />
 
             <Button
                 android:id="@+id/b4CM4"
