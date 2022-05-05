@@ -21,9 +21,9 @@ public class PopUp extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_test_module1);
+        setContentView(R.layout.activity_pop_up);
 
-        ShowDialog = findViewById(R.id.com_mths_btn);
+        ShowDialog = findViewById(R.id.dialog_btn);
 
         //Create the Dialog here
         dialog = new Dialog(this);
