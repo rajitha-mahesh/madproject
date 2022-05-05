@@ -10,7 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MADProjectUserInterface">
         <activity
-            android:name=".TestModule"
+            android:name=".TestModule3"
+            android:exported="false" />
+        <activity
+            android:name=".TestModule1"
             android:exported="false" />
         <activity
             android:name=".Subject"
