@@ -12,6 +12,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
+   <!-- <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="Toolbar"
+        app:logo="@drawable/ic_side_menu_24"
+        app:titleTextColor="#FFFFFF"
+        app:titleMarginStart="10dp"
+        android:layout_marginBottom="5dp"
+        tools:ignore ="MissingConstraints"/> -->
+
     <!--<SearchView
         android:id="@+id/search_bar"
         android:layout_width="330dp"
