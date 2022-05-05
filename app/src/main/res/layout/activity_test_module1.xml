@@ -21,17 +21,16 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
+
             <androidx.appcompat.widget.Toolbar
-                app:navigationIcon="@drawable/ic_baseline_menu_24"
+                android:id="@+id/toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
-                android:id="@+id/toolbar"
                 android:background="@color/purple_500"
-                />
-
+                app:navigationIcon="@drawable/ic_baseline_menu_24" />
 
             <TextView
-                android:id="@+id/tvMathss5"
+                android:id="@+id/mths_btn"
                 android:layout_width="397dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="20dp"
@@ -45,56 +44,55 @@
                 android:id="@+id/divider3"
                 android:layout_width="179dp"
                 android:layout_height="2dp"
-                android:layout_below="@id/bio"
+                android:layout_below="@+id/mths_btn"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:background="?android:attr/listDivider" />
 
             <Button
-                android:id="@+id/b4CM4"
+                android:id="@+id/com_mths_btn"
                 android:layout_width="253dp"
                 android:layout_height="48dp"
-                android:layout_marginTop="30dp"
                 android:layout_gravity="center"
+                android:layout_marginTop="30dp"
                 android:background="@drawable/module_page_btn"
                 android:text="Combined Maths" />
 
             <Button
-                android:id="@+id/b4CM2"
+                android:id="@+id/phy_btn"
                 android:layout_width="253dp"
                 android:layout_height="48dp"
-                android:layout_marginTop="20dp"
                 android:layout_gravity="center"
+                android:layout_marginTop="20dp"
                 android:background="@drawable/module_page_btn"
-                android:text="Physics"
-                />
+                android:text="Physics" />
 
             <Button
-                android:id="@+id/b4CM3"
+                android:id="@+id/chem_btn"
                 android:layout_width="253dp"
                 android:layout_height="48dp"
-                android:layout_marginTop="20dp"
                 android:layout_gravity="center"
+                android:layout_marginTop="20dp"
                 android:background="@drawable/module_page_btn"
                 android:text="Chemistry" />
 
             <Button
-                android:id="@+id/b4CM"
+                android:id="@+id/it_btn"
                 android:layout_width="253dp"
                 android:layout_height="48dp"
-                android:layout_marginTop="20dp"
                 android:layout_gravity="center"
+                android:layout_marginTop="20dp"
                 android:background="@drawable/module_page_btn"
                 android:text="Information Technology" />
 
             <View
                 android:id="@+id/divider2"
-                android:layout_width="409dp"
+                android:layout_width="match_parent"
                 android:layout_height="5dp"
                 android:layout_below="@id/b4CM4"
                 android:layout_marginTop="30dp"
                 android:layout_marginRight="2dp"
-                android:background="?android:attr/listDivider"/>
+                android:background="?android:attr/listDivider" />
 
 
             <ImageButton
