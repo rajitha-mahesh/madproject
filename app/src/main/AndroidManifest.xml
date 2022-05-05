@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MADProjectUserInterface">
         <activity
+            android:name=".TestModule"
+            android:exported="true" />
+        <activity
             android:name=".TestMenu"
             android:exported="true" />
         <activity
