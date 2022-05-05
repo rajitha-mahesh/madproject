@@ -9,8 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MADProjectUserInterface">
+
+
         <activity
-            android:name=".Subject"
+            android:name=".TestModule1"
+            android:exported="false" />
+        <activity
+            android:name=".TestModule2"
+            android:exported="false" />
+        <activity
+            android:name=".TestModule3"
+            android:exported="false" />
+        <activity
+            android:name=".TestModule4"
             android:exported="false" />
         <activity
             android:name=".Module"
@@ -23,9 +34,6 @@
             android:exported="false" />
         <activity
             android:name=".Favourites"
-            android:exported="false" />
-        <activity
-            android:name=".Popup"
             android:exported="false" />
         <activity
             android:name=".ChangePassword"
