@@ -19,6 +19,7 @@ public class TestMenu extends AppCompatActivity {
     DrawerLayout drawerLayout;
     NavigationView navigationView;
     ActionBarDrawerToggle actionBarDrawerToggle;
+    Toolbar toolbar;
 
 
     @Override
@@ -39,8 +40,8 @@ public class TestMenu extends AppCompatActivity {
         //nav bar
         drawerLayout = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.navigationView);
-        actionBarDrawerToggle = new ActionBarDrawerToggle(this,drawerLayout, R.string.menu_open, R.string.menu_close);
-        drawerLayout.addDrawerListener(actionBarDrawerToggle);
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this,drawerLayout,toolbar, R.string.menu_open, R.string.menu_close);
+        drawerLayout.addDrawerListener(toggle);
         actionBarDrawerToggle.syncState();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {

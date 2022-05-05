@@ -11,7 +11,7 @@
         android:theme="@style/Theme.MADProjectUserInterface">
         <activity
             android:name=".TestMenu"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".Subject"
             android:exported="false" />
