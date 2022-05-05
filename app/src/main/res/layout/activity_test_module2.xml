@@ -41,6 +41,15 @@
                 android:textSize="30sp"
                 android:textStyle="bold|italic" />
 
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="127dp"
+                android:layout_height="2dp"
+                android:layout_below="@id/bio"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="?android:attr/listDivider" />
+
             <Button
                 android:id="@+id/b4CM4"
                 android:layout_width="253dp"
