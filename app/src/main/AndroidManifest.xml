@@ -25,7 +25,7 @@
             android:name=".Favourites"
             android:exported="false" />
         <activity
-            android:name=".ConfirmPassword"
+            android:name=".Popup"
             android:exported="false" />
         <activity
             android:name=".ChangePassword"
