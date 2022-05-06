@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:id="@+id/drawer_layout"
     android:fitsSystemWindows="true"
-    tools:context=".TestModule3"
+    tools:context=".TestModule4"
     tools:openDrawer="start">
 
     <ScrollView
@@ -31,19 +31,19 @@
 
 
             <TextView
-                android:id="@+id/bio"
+                android:id="@+id/art"
                 android:layout_width="397dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="40dp"
-                android:text="COMMERCE"
+                android:text="ARTS"
                 android:textColor="#000000"
                 android:textSize="30sp"
                 android:textStyle="bold|italic" />
 
             <View
                 android:id="@+id/divider3"
-                android:layout_width="167dp"
+                android:layout_width="80dp"
                 android:layout_height="2dp"
                 android:layout_below="@id/bio"
                 android:layout_marginLeft="20dp"
@@ -51,41 +51,41 @@
                 android:background="?android:attr/listDivider" />
 
             <Button
-                android:id="@+id/b4CM4"
+                android:id="@+id/sinhala_btn"
                 android:layout_width="253dp"
                 android:layout_height="48dp"
                 android:layout_marginTop="30dp"
                 android:layout_gravity="center"
                 android:background="@drawable/module_page_btn"
-                android:text="econ" />
+                android:text="sinhala" />
 
             <Button
-                android:id="@+id/b4CM2"
+                android:id="@+id/geo_btn"
                 android:layout_width="253dp"
                 android:layout_height="48dp"
                 android:layout_marginTop="20dp"
                 android:layout_gravity="center"
                 android:background="@drawable/module_page_btn"
-                android:text="accounting"
+                android:text="Geography"
                 />
 
             <Button
-                android:id="@+id/b4CM3"
+                android:id="@+id/poli_btn"
                 android:layout_width="253dp"
                 android:layout_height="48dp"
                 android:layout_marginTop="20dp"
                 android:layout_gravity="center"
                 android:background="@drawable/module_page_btn"
-                android:text="Business Studies" />
+                android:text="political" />
 
             <Button
-                android:id="@+id/b4CM"
+                android:id="@+id/logic_btn"
                 android:layout_width="253dp"
                 android:layout_height="48dp"
                 android:layout_marginTop="20dp"
                 android:layout_gravity="center"
                 android:background="@drawable/module_page_btn"
-                android:text="Information Technology" />
+                android:text="Logic" />
 
             <View
                 android:id="@+id/divider2"
