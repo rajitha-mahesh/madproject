@@ -10,9 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MADProjectUserInterface">
         <activity
-            android:name=".PopUp"
-            android:exported="true" />
-        <activity
             android:name=".TestModule3"
             android:exported="false" />
         <activity
