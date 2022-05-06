@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MADProjectUserInterface">
         <activity
+            android:name=".PastPaper"
+            android:exported="false" />
+        <activity
+            android:name=".YouTubePlayerView"
+            android:exported="false" />
+        <activity
             android:name=".TestModule"
             android:exported="true" />
         <activity
