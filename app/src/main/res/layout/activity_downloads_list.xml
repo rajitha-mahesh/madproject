@@ -103,12 +103,10 @@
                     android:layout_alignParentBottom="true"
                     android:layout_gravity="bottom|end"
                     android:layout_marginLeft="301dp"
-                    android:layout_marginBottom="17dp"
+                    android:layout_marginBottom="67dp"
                     android:background="@drawable/ic_baseline_delete_24"
                     android:padding="30dp"
                     android:textSize="50dp" />
-
-
 
 
             </RelativeLayout>
@@ -155,11 +153,10 @@
                     android:layout_alignParentBottom="true"
                     android:layout_gravity="bottom|end"
                     android:layout_marginLeft="301dp"
-                    android:layout_marginBottom="17dp"
+                    android:layout_marginBottom="63dp"
                     android:background="@drawable/ic_baseline_delete_24"
                     android:padding="30dp"
                     android:textSize="50dp" />
-
 
 
             </RelativeLayout>
@@ -205,12 +202,11 @@
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentBottom="true"
                     android:layout_gravity="bottom|end"
-                    android:layout_marginLeft="301dp"
-                    android:layout_marginBottom="17dp"
+                    android:layout_marginLeft="303dp"
+                    android:layout_marginBottom="57dp"
                     android:background="@drawable/ic_baseline_delete_24"
                     android:padding="30dp"
                     android:textSize="50dp" />
-
 
 
             </RelativeLayout>
@@ -256,8 +252,8 @@
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentBottom="true"
                     android:layout_gravity="bottom|end"
-                    android:layout_marginLeft="301dp"
-                    android:layout_marginBottom="17dp"
+                    android:layout_marginLeft="305dp"
+                    android:layout_marginBottom="70dp"
                     android:background="@drawable/ic_baseline_delete_24"
                     android:padding="30dp"
                     android:textSize="50dp" />
