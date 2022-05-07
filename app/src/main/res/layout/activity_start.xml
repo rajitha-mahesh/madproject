@@ -16,6 +16,28 @@
 
     </LinearLayout>
 
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="282dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/start_bg"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="-11dp"
+        android:layout_marginBottom="168dp"
+        android:fontFamily="cursive"
+        android:rotation="-12"
+        android:rotationX="-21"
+        android:rotationY="-12"
+        android:text="Tutor"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="60sp"
+        android:textStyle="bold|italic"
+        android:typeface="serif"
+        tools:visibility="visible" />
+
 
 </RelativeLayout>
 
