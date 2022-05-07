@@ -20,4 +20,3 @@ public class VedioList extends AppCompatActivity {
             videoView.setMediaController(mediaController);
         }
     }
-}
