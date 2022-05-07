@@ -1,21 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainHome">
+    android:id="@+id/drawer_layout"
+    android:fitsSystemWindows="true"
+    tools:context=".MainHome"
+    tools:openDrawer="start">
 
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            app:navigationIcon="@drawable/ic_baseline_menu_24"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:id="@+id/toolbar"
+            android:background="@color/purple_500"
+            />
+
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/drawer_menu"
+        android:fitsSystemWindows="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
      <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/black"
+        android:background="@color/white"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         app:title="Toolbar"
         app:logo="@drawable/ic_side_menu_24"
@@ -24,14 +56,6 @@
         android:layout_marginBottom="5dp"
         tools:ignore ="MissingConstraints"/>
 
-    <!--<SearchView
-        android:id="@+id/search_bar"
-        android:layout_width="330dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:layout_marginLeft="50dp"
-        android:background="@drawable/input_shape"
-        tools:ignore="InvalidId" />-->
 
     <ScrollView
         android:layout_width="match_parent"
@@ -43,15 +67,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
+            android:layout_marginTop="50dp"
             android:paddingBottom="50dp">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/search_bar"
-                android:layout_marginLeft="35dp"
-                android:padding="10dp"
-                android:text="Subject"
+                android:layout_below="@+id/toolbar"
+                android:layout_marginLeft="30dp"
+                android:padding="20dp"
+                android:text="Stream"
                 android:textColor="@color/black"
                 android:textSize="27dp"
                 android:textStyle="bold" />
@@ -67,6 +92,7 @@
                     android:layout_height="140dp"
                     android:layout_marginLeft="40dp"
                     android:background="@drawable/home_btn"
+                    android:onClick="selectedMaths"
                     android:text="Mathematics" />
 
                 <Button
@@ -117,10 +143,10 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="3dp"
-                    android:layout_marginStart="30dp"
+                    android:layout_marginStart="20dp"
                     android:layout_marginTop="10dp"
-                    android:layout_marginEnd="30dp"
-                    android:background="@color/black" />
+                    android:layout_marginEnd="20dp"
+                    android:background="#5E000000" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -128,7 +154,7 @@
                     android:layout_below="@+id/search_bar"
                     android:layout_marginLeft="35dp"
                     android:padding="10dp"
-                    android:text="Subject"
+                    android:text="Resources"
                     android:textColor="@color/black"
                     android:textSize="27dp"
                     android:textStyle="bold" />
@@ -137,24 +163,26 @@
                     android:id="@+id/pp_btn"
                     android:layout_width="300dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="50dp"
+                    android:layout_gravity="center"
                     android:background="@drawable/home_btn"
+                    android:onClick="selectPassPapers"
                     android:text="Past papers" />
 
                 <Button
                     android:id="@+id/ebook_btn"
                     android:layout_width="300dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="50dp"
+                    android:layout_gravity="center"
                     android:layout_marginTop="10dp"
                     android:background="@drawable/home_btn"
+                    android:onClick="selectedEBook"
                     android:text="E-Book" />
 
                 <Button
                     android:id="@+id/video_btn"
                     android:layout_width="300dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="50dp"
+                    android:layout_gravity="center"
                     android:layout_marginTop="10dp"
                     android:background="@drawable/home_btn"
                     android:text="Videos" />
@@ -162,7 +190,9 @@
             </LinearLayout>
 
         </LinearLayout>
+
     </ScrollView>
-</LinearLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>
 
 

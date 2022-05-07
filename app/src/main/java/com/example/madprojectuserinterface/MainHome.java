@@ -1,102 +1,123 @@
 package com.example.madprojectuserinterface;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.view.menu.MenuBuilder;
+import androidx.appcompat.widget.Toolbar;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
+
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 public class MainHome extends AppCompatActivity {
 
 
-    //maths
-    private Button button1;
-    private Button button2;
-    private Button button3;
-    private Button button4;
-
-    //resource
-    private  Button button5;
-    private  Button button6;
-    private  Button button7;
+    DrawerLayout drawerLayout;
+    NavigationView navigationView;
+    ActionBarDrawerToggle actionBarDrawerToggle;
+    Toolbar toolbar;
 
 
+    FirebaseAuth mAuth = FirebaseAuth.getInstance();
+    FirebaseFirestore db = FirebaseFirestore.getInstance();
 
-
+    @SuppressLint("RestrictedApi")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_home);
 
-        button1 = findViewById(R.id.mathe_btn);
-        button2 = findViewById(R.id.biolgy_btn);
-        button3 = findViewById(R.id.chem_btn);
-        button4 = findViewById(R.id.it_btn);
 
-        //resource
-        button5 = findViewById(R.id.pp_btn);
-        button6 = findViewById(R.id.ebook_btn);
-        button7 = findViewById(R.id.video_btn);
+//        drawerLayout = findViewById(R.id.drawer_layout);
+//        navigationView = findViewById(R.id.navigationView);
+//        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this,drawerLayout,toolbar, R.string.menu_open, R.string.menu_close);
+//        drawerLayout.addDrawerListener(toggle);
+//        actionBarDrawerToggle.syncState();
+//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+//        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+
+//            @Override
+//            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+//
+//                switch (item.getItemId()) {
+//                    case R.id.nav_home:
+//                        Log.i("MENU_DRAWER_TAG", "Home item is clicked");
+//                        drawerLayout.closeDrawer(GravityCompat.START);
+//                        break;
+//
+//                    case R.id.nav_profile:
+//                        Log.i("MENU_DRAWER_TAG", "profile item is clicked");
+//                        drawerLayout.closeDrawer(GravityCompat.START);
+//                }
+//
+//                return true;
+//            }
+//        });
 
 
-        button1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainHome.this, TestModule1.class);
-                startActivity(intent);
-            }
-        });
 
-        button2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainHome.this, TestModule1.class);
-                startActivity(intent);
-            }
-        });
-
-        button3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainHome.this, TestModule1.class);
-                startActivity(intent);
-            }
-        });
-
-        button4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainHome.this, TestModule1.class);
-                startActivity(intent);
-            }
-        });
-
-        //resource
-        button5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainHome.this, TestModule1.class);
-                startActivity(intent);
-            }
-        });
-
-        button6.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainHome.this, TestModule1.class);
-                startActivity(intent);
-            }
-        });
-
-        button7.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainHome.this, TestModule1.class);
-                startActivity(intent);
-            }
-        });
 
 
     }
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if(actionBarDrawerToggle.onOptionsItemSelected(item))
+        {
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        getAuthUser();
+    }
+
+    private void getAuthUser(){
+        String userId = mAuth.getCurrentUser().getUid();
+        DocumentReference documentReference = db.collection("users").document(userId);
+        documentReference.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+            @Override
+            public void onSuccess(DocumentSnapshot documentSnapshot) {
+                TextView fullName = (TextView) findViewById(R.id.nav_full_name);
+                TextView navMail = (TextView) findViewById(R.id.nav_mail);
+
+                fullName.setText(documentSnapshot.getString("name"));
+                navMail.setText(documentSnapshot.getString("email"));
+            }
+        });
+    }
+
+    public void selectedMaths(View view) {
+        Intent i = new Intent(getApplicationContext(), TestModule1.class);
+        startActivity(i);
+    }
+
+    public void selectPassPapers(View view) {
+        Intent i = new Intent(getApplicationContext(), PastPapers.class);
+        startActivity(i);
+    }
+
+    public void selectedEBook(View view) {
+        Intent i = new Intent(getApplicationContext(), EBooks.class);
+        startActivity(i);
+    }
+
 }

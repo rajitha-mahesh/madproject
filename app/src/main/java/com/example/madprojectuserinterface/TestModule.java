@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class enter_transfer_detaill extends AppCompatActivity {
+public class TestModule extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_enter_transfer_detaill);
+        setContentView(R.layout.activity_test_module);
     }
 }
