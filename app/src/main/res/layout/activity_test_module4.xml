@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/drawer_layout"
+    android:fitsSystemWindows="true"
+    tools:context=".TestModule4"
+    tools:openDrawer="start">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                app:navigationIcon="@drawable/ic_baseline_menu_24"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:id="@+id/toolbar"
+                android:background="@color/purple_500"
+                />
+
+
+            <TextView
+                android:id="@+id/art"
+                android:layout_width="397dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
+                android:text="ARTS"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                android:textStyle="bold|italic" />
+
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="80dp"
+                android:layout_height="2dp"
+                android:layout_below="@id/bio"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="?android:attr/listDivider" />
+
+            <Button
+                android:id="@+id/sinhala_btn"
+                android:layout_width="253dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                android:background="@drawable/module_page_btn"
+                android:text="sinhala" />
+
+            <Button
+                android:id="@+id/geo_btn"
+                android:layout_width="253dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/module_page_btn"
+                android:text="Geography"
+                />
+
+            <Button
+                android:id="@+id/poli_btn"
+                android:layout_width="253dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/module_page_btn"
+                android:text="political" />
+
+            <Button
+                android:id="@+id/logic_btn"
+                android:layout_width="253dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/module_page_btn"
+                android:text="Logic" />
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="409dp"
+                android:layout_height="5dp"
+                android:layout_below="@id/b4CM4"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="2dp"
+                android:background="?android:attr/listDivider"/>
+
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="328dp"
+                android:layout_height="213dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                app:srcCompat="@drawable/ad_image"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

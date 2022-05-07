@@ -10,6 +10,63 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MADProjectUserInterface">
         <activity
+            android:name=".QuestionLibrary"
+            android:exported="false" />
+        <activity
+            android:name=".QuizActivity"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".EBooks"
+            android:exported="false" />
+        <activity
+            android:name=".BiologyPastPapers"
+            android:exported="false" />
+        <activity
+            android:name=".PhysicsPastPapers"
+            android:exported="false" />
+        <activity
+            android:name=".ComMathPastPapers"
+            android:exported="false" />
+        <activity
+            android:name=".PastPapers"
+            android:exported="false" />
+        <activity
+            android:name=".TestModule1"
+            android:exported="false" />
+        <activity
+            android:name=".TestModule2"
+            android:exported="false" />
+        <activity
+            android:name=".TestModule3"
+            android:exported="false" />
+        <activity
+            android:name=".TestModule4"
+            android:exported="false" />
+        <activity
+            android:name=".Module"
+            android:exported="true" />
+        <activity
+            android:name=".InModule"
+            android:exported="false" />
+        <activity
+            android:name=".FogrtPassword"
+            android:exported="false" />
+        <activity
+            android:name=".Favourites"
+            android:exported="false" />
+        <activity
+            android:name=".ChangePassword"
+            android:exported="false" />
+        <activity
+            android:name=".student_payment_details"
+            android:exported="false" />
+        <activity
             android:name=".enter_transfer_detaill"
             android:exported="false" />
         <activity
