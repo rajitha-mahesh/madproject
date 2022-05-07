@@ -11,7 +11,7 @@ public class VideoPlayer extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_video_player);
         VideoView videoView = findViewById(R.id.videoView);
         videoView.setVideoPath("android.resource://"+getPackageName()+"/"+ R.raw.pendiulum_motion);
         MediaController mediaController = new MediaController(this);
