@@ -10,9 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MADProjectUserInterface">
         <activity
-            android:name=".student_payment_details"
-            android:exported="false" />
-        <activity
             android:name=".enter_transfer_detaill"
             android:exported="false" />
         <activity
