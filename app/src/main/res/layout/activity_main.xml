@@ -41,9 +41,9 @@
         android:layout_below="@+id/payvia"
         android:layout_alignStart="@+id/bluetextureimage"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="163dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="149dp"
+        android:layout_marginStart="154dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="154dp"
         android:background="@drawable/roundbtn"
         android:text="@string/card" />
 
@@ -54,13 +54,12 @@
         android:layout_below="@+id/cardbtn"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="155dp"
+        android:layout_marginStart="146dp"
         android:layout_marginTop="27dp"
-        android:layout_marginEnd="132dp"
+        android:layout_marginEnd="142dp"
         android:background="@drawable/roundbtn"
         android:text="@string/bank_t"
         app:shapeAppearanceOverlay="@style/roundbtnview" />
-
 
 
 </RelativeLayout>
