@@ -12,7 +12,6 @@ import android.widget.Toast;
 
 public class TestModule1 extends AppCompatActivity {
 
-    private Dialog dialog;
     private Button ShowDialog1;
     private Button ShowDialog2;
     private Button ShowDialog3;
@@ -38,14 +37,14 @@ public class TestModule1 extends AppCompatActivity {
         dialog.setCancelable(false); //Optional
         dialog.getWindow().getAttributes().windowAnimations = R.style.DialogAnimation; //Setting the animations to dialog
 
-        Button Okay = dialog.findViewById(R.id.btn_okay);
+        Button pay = dialog.findViewById(R.id.btn_pay);
         Button Cancel = dialog.findViewById(R.id.btn_cancel);
 
-        Okay.setOnClickListener(new View.OnClickListener() {
+        pay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Toast.makeText(TestModule1.this, "Okay", Toast.LENGTH_SHORT).show();
+                Toast.makeText(TestModule1.this, "pay", Toast.LENGTH_SHORT).show();
                 dialog.dismiss();
             }
         });
