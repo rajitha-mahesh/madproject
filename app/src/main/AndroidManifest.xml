@@ -77,7 +77,7 @@
             android:exported="false" />
         <activity
             android:name=".MainHome"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".SignUp"
             android:exported="false" />

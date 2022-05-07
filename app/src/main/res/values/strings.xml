@@ -19,4 +19,8 @@
     <string name="bank_t">Bank Transfer</string>
     <string name="save_cd_for_future">save this card for future payments</string>
 
+
+    //navbar
+    <string name="menu_open">Open </string>
+    <string name="menu_close">Close</string>
 </resources>
