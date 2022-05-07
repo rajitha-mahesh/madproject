@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class enter_transfer_detaill extends AppCompatActivity {
+public class EnterTransferDetaill extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

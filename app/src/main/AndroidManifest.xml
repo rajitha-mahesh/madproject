@@ -10,8 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MADProjectUserInterface">
         <activity
-            android:name=".SplashScreen"
-            android:exported="true" />
+            android:name=".Login"
+            android:exported="false" />
         <activity
             android:name=".PdfActivity"
             android:exported="false" />
@@ -61,7 +61,7 @@
             android:name=".student_payment_details"
             android:exported="false" />
         <activity
-            android:name=".enter_transfer_detaill"
+            android:name=".EnterTransferDetaill"
             android:exported="false" />
         <activity
             android:name=".EnterCardDetails"
@@ -73,16 +73,16 @@
             android:name=".UserProfile"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".PaymentType"
             android:exported="false" />
         <activity
-            android:name=".MainHome"
+            android:name=".SplashScreen"
             android:exported="false" />
         <activity
             android:name=".SignUp"
             android:exported="false" />
         <activity
-            android:name=".Login"
+            android:name=".MainHome"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

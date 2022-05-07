@@ -75,7 +75,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30sp"
                     android:layout_marginEnd="10dp"
-                    android:background="#oooooo"
+                    android:background="#000000"
                     android:padding="2dp"
                     android:src="@drawable/ic_urned_in_not_24">
 
