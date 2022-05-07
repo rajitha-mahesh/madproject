@@ -95,6 +95,7 @@
                     android:padding="20dp"
                     android:textSize="30dp" />
 
+
                 <Button
                     android:id="@+id/favBtn"
                     android:layout_width="30dp"
@@ -107,6 +108,19 @@
                     android:background="@drawable/ic_baseline_favorite_border_24"
                     android:padding="30dp"
                     android:textSize="50dp" />
+
+                <Button
+                    android:id="@+id/test1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="301dp"
+                    android:layout_marginEnd="14dp"
+                    android:background="@color/teal_200"
+                    android:text="Test"
+                    app:cardCornerRadius="20dp" />
+
 
             </RelativeLayout>
 
@@ -157,6 +171,18 @@
                     android:padding="30dp"
                     android:textSize="50dp" />
 
+                <Button
+                    android:id="@+id/test2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="301dp"
+                    android:layout_marginEnd="14dp"
+                    android:background="@color/teal_200"
+                    android:text="Test"
+                    app:cardCornerRadius="20dp" />
+
             </RelativeLayout>
 
         </androidx.cardview.widget.CardView>
@@ -205,6 +231,18 @@
                     android:background="@drawable/ic_baseline_favorite_border_24"
                     android:padding="30dp"
                     android:textSize="50dp" />
+
+                <Button
+                    android:id="@+id/test3"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="301dp"
+                    android:layout_marginEnd="14dp"
+                    android:background="@color/teal_200"
+                    android:text="Test"
+                    app:cardCornerRadius="20dp" />
 
             </RelativeLayout>
 
@@ -255,6 +293,18 @@
                     android:padding="30dp"
                     android:textSize="50dp" />
 
+                <Button
+                    android:id="@+id/test4"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="301dp"
+                    android:layout_marginEnd="14dp"
+                    android:background="@color/teal_200"
+                    android:text="Test"
+                    app:cardCornerRadius="20dp" />
+
             </RelativeLayout>
 
         </androidx.cardview.widget.CardView>
@@ -303,6 +353,18 @@
                     android:background="@drawable/ic_baseline_favorite_border_24"
                     android:padding="30dp"
                     android:textSize="50dp" />
+
+                <Button
+                    android:id="@+id/test5"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="301dp"
+                    android:layout_marginEnd="14dp"
+                    android:background="@color/teal_200"
+                    android:text="Test"
+                    app:cardCornerRadius="20dp" />
 
             </RelativeLayout>
 
