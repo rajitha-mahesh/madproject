@@ -11,8 +11,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MADProjectUserInterface">
         <activity
+            android:name=".VedioList"
+            android:exported="false" />
+        <activity
             android:name=".VideoPlayer"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

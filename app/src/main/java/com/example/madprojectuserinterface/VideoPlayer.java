@@ -18,4 +18,6 @@ public class VideoPlayer extends AppCompatActivity {
         mediaController.setAnchorView(videoView);
         videoView.setMediaController(mediaController);
     }
+
+
 }
