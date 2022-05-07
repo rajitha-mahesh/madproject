@@ -11,7 +11,7 @@ public class MainHome extends AppCompatActivity {
 
 
     //maths
-    private Button button1;
+   /* private Button button1;
     private Button button2;
     private Button button3;
     private Button button4;
@@ -19,7 +19,7 @@ public class MainHome extends AppCompatActivity {
     //resource
     private  Button button5;
     private  Button button6;
-    private  Button button7;
+    private  Button button7;*/
 
 
 
@@ -29,7 +29,7 @@ public class MainHome extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_home);
 
-        button1 = findViewById(R.id.mathe_btn);
+      /*  button1 = findViewById(R.id.mathe_btn);
         button2 = findViewById(R.id.biolgy_btn);
         button3 = findViewById(R.id.chem_btn);
         button4 = findViewById(R.id.it_btn);
@@ -95,8 +95,7 @@ public class MainHome extends AppCompatActivity {
                 Intent intent = new Intent(MainHome.this, TestModule1.class);
                 startActivity(intent);
             }
-        });
-
+        }); */
 
     }
 }

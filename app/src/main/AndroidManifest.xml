@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MADProjectUserInterface">
         <activity
+            android:name=".SplashScreen"
+            android:exported="true" />
+        <activity
             android:name=".PdfActivity"
             android:exported="false" />
         <activity
@@ -29,7 +32,7 @@
             android:exported="true" />
         <activity
             android:name=".TestModule1"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".TestModule2"
             android:exported="false" />
