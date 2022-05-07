@@ -8,7 +8,7 @@
     android:layout_height="match_parent"
     tools:context=".InModule"
     android:background="@color/white">
-    
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -49,7 +49,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="20dp"
-            android:text="Physics"
+            android:text="E-Books"
             android:textAllCaps="true"
             android:textColor="@color/black"
             android:textSize="30sp"
@@ -62,7 +62,6 @@
             android:background="?android:attr/listDivider" />
 
 
-
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -82,7 +81,7 @@
                     android:layout_height="120dp"
                     android:layout_alignParentBottom="true"
                     android:padding="25dp"
-                    android:text="Measurments"
+                    android:text="2001"
                     android:textColor="@color/black"
                     android:textSize="30dp" />
 
@@ -118,7 +117,7 @@
                     android:layout_height="120dp"
                     android:layout_alignParentBottom="true"
                     android:padding="25dp"
-                    android:text="Mechanics"
+                    android:text="2002"
                     android:textColor="@color/black"
                     android:textSize="30dp" />
 
@@ -154,7 +153,7 @@
                     android:layout_height="120dp"
                     android:layout_alignParentBottom="true"
                     android:padding="25dp"
-                    android:text="Waves"
+                    android:text="2013"
                     android:textColor="@color/black"
                     android:textSize="30dp" />
 
@@ -190,7 +189,7 @@
                     android:layout_height="120dp"
                     android:layout_alignParentBottom="true"
                     android:padding="25dp"
-                    android:text="Thermal Physics"
+                    android:text="2011 New Syllubus"
                     android:textColor="@color/black"
                     android:textSize="30dp" />
 
@@ -226,7 +225,7 @@
                     android:layout_height="120dp"
                     android:layout_alignParentBottom="true"
                     android:padding="25dp"
-                    android:text="Gravitational Field"
+                    android:text="2021"
                     android:textColor="@color/black"
                     android:textSize="30dp" />
 
@@ -246,9 +245,6 @@
 
 
     </LinearLayout>
-    
-    
+
+
 </ScrollView>
-
-
-
