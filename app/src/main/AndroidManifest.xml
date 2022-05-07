@@ -11,6 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MADProjectUserInterface">
         <activity
+            android:name=".DownloadsList"
+            android:exported="false" />
+        <activity
             android:name=".VedioList"
             android:exported="false" />
         <activity
