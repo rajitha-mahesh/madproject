@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" -->
+
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -94,6 +94,19 @@
                     android:padding="20dp"
                     android:textSize="30dp" />
 
+                <Button
+                    android:id="@+id/favBtn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="bottom|end"
+                    android:layout_marginLeft="301dp"
+                    android:layout_marginBottom="17dp"
+                    android:background="@drawable/ic_baseline_favorite_border_24"
+                    android:padding="30dp"
+                    android:textSize="50dp" />
+
             </RelativeLayout>
 
         </androidx.cardview.widget.CardView>
@@ -129,6 +142,19 @@
                     android:background="#00000000"
                     android:padding="20dp"
                     android:textSize="30dp" />
+
+                <Button
+                    android:id="@+id/favBtn1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="bottom|end"
+                    android:layout_marginLeft="301dp"
+                    android:layout_marginBottom="17dp"
+                    android:background="@drawable/ic_baseline_favorite_border_24"
+                    android:padding="30dp"
+                    android:textSize="50dp" />
 
             </RelativeLayout>
 
@@ -166,6 +192,19 @@
                     android:padding="20dp"
                     android:textSize="30dp" />
 
+                <Button
+                    android:id="@+id/favBtn2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="bottom|end"
+                    android:layout_marginLeft="301dp"
+                    android:layout_marginBottom="17dp"
+                    android:background="@drawable/ic_baseline_favorite_border_24"
+                    android:padding="30dp"
+                    android:textSize="50dp" />
+
             </RelativeLayout>
 
         </androidx.cardview.widget.CardView>
@@ -202,6 +241,19 @@
                     android:padding="20dp"
                     android:textSize="30dp" />
 
+                <Button
+                    android:id="@+id/favBtn3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="bottom|end"
+                    android:layout_marginLeft="301dp"
+                    android:layout_marginBottom="17dp"
+                    android:background="@drawable/ic_baseline_favorite_border_24"
+                    android:padding="30dp"
+                    android:textSize="50dp" />
+
             </RelativeLayout>
 
         </androidx.cardview.widget.CardView>
@@ -237,6 +289,19 @@
                     android:background="#00000000"
                     android:padding="20dp"
                     android:textSize="30dp" />
+
+                <Button
+                    android:id="@+id/favBtn4"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="bottom|end"
+                    android:layout_marginLeft="301dp"
+                    android:layout_marginBottom="17dp"
+                    android:background="@drawable/ic_baseline_favorite_border_24"
+                    android:padding="30dp"
+                    android:textSize="50dp" />
 
             </RelativeLayout>
 
