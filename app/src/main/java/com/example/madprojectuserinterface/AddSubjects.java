@@ -4,7 +4,12 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
+
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class AddSubjects extends AppCompatActivity {
 
@@ -33,7 +38,7 @@ public class AddSubjects extends AppCompatActivity {
         subjectPay = new SubjectPay();
         ref = database.getInstance().getReference().child("user");
 
-        ref addValueeventlistener(new.valueeventlistener(){
+        ref.addValueeventlistener(new.valueeventlistener(){
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot){
                 if (dataSnapshot.exists()){
@@ -57,7 +62,7 @@ public class AddSubjects extends AppCompatActivity {
                 subjectPay.setSubject3(subject3.getText().toString());
                 subjectPay.setSubject4(subject4.getText().toString());
 
-                ref.child(string.valueOf(maxid+1)).setValue (subjectPay);
+                ref.child(String.valueOf(maxid+1)).setValue (subjectPay);
             }
 
         });
