@@ -21,26 +21,14 @@
             android:exported="true" />
         <activity
             android:name=".VideoPlayer"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".QuestionLibrary"
             android:exported="false"
             tools:ignore="Instantiatable" />
         <activity
             android:name=".QuizActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".EBooks"
             android:exported="false" />
@@ -82,9 +70,6 @@
             android:exported="false" />
         <activity
             android:name=".ChangePassword"
-            android:exported="false" />
-        <activity
-            android:name=".student_payment_details"
             android:exported="false" />
         <activity
             android:name=".enter_transfer_detaill"
