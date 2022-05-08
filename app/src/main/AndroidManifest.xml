@@ -54,20 +54,23 @@
             android:name=".PastPapers"
             android:exported="false" />
         <activity
-            android:name=".TestModule1"
+            android:name=".PastPaper"
             android:exported="false" />
         <activity
-            android:name=".TestModule2"
+            android:name=".YouTubePlayerView"
             android:exported="false" />
         <activity
-            android:name=".TestModule3"
-            android:exported="false" />
+            android:name=".TestModule"
+            android:exported="true" />
         <activity
-            android:name=".TestModule4"
+            android:name=".TestMenu"
+            android:exported="true" />
+        <activity
+            android:name=".Subject"
             android:exported="false" />
         <activity
             android:name=".Module"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".InModule"
             android:exported="false" />
@@ -76,6 +79,9 @@
             android:exported="false" />
         <activity
             android:name=".Favourites"
+            android:exported="false" />
+        <activity
+            android:name=".ConfirmPassword"
             android:exported="false" />
         <activity
             android:name=".ChangePassword"
@@ -100,7 +106,8 @@
             android:exported="false" />
         <activity
             android:name=".MainHome"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".SignUp"
             android:exported="false" />
