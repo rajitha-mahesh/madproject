@@ -1,20 +1,13 @@
 package com.example.madprojectuserinterface;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
-    RecyclerView recyclerView;
-    CardView adapter;
-
-    String modules[]={"mathematics","physics","chemistry","Biology"};
-
+public class PaymentType extends AppCompatActivity {
 
     private Button changeToCardPay;
     private Button changeToBankTransfer;
@@ -23,15 +16,16 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_payment_type);
 
-        changeToCardPay =  findViewById(R.id.cardbtn);
-        changeToBankTransfer =  findViewById(R.id.banktransferbtn);
+
+        changeToCardPay = findViewById(R.id.cardbtn);
+        changeToBankTransfer = findViewById(R.id.banktransferbtn);
 
         changeToCardPay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, EnterCardDetails.class);
+                Intent intent = new Intent(PaymentType.this, EnterCardDetails.class);
                 startActivity(intent);
             }
         });
@@ -39,12 +33,21 @@ public class MainActivity extends AppCompatActivity {
         changeToBankTransfer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, enter_transfer_detaill.class);
+                Intent intent = new Intent(PaymentType.this, EnterTransferDetaill.class);
                 startActivity(intent);
             }
         });
 
     }
 
-
+    public void selectedCard(View view) {
+        Intent i = new Intent(getApplicationContext(), EnterCardDetails.class);
+        startActivity(i);
     }
+
+    public void selectedBankTransfer(View view) {
+        Intent i = new Intent(getApplicationContext(), EnterTransferDetaill.class);
+        startActivity(i);
+    }
+
+}

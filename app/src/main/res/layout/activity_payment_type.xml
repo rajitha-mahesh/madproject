@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".PaymentType">
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/bluetextureimage"
@@ -45,6 +45,7 @@
         android:layout_marginTop="30dp"
         android:layout_marginEnd="154dp"
         android:background="@drawable/roundbtn"
+        android:onClick="selectedCard"
         android:text="@string/card" />
 
     <Button
@@ -59,6 +60,7 @@
         android:layout_marginEnd="142dp"
         android:background="@drawable/roundbtn"
         android:text="@string/bank_t"
+        android:onClick="selectedBankTransfer"
         app:shapeAppearanceOverlay="@style/roundbtnview" />
 
 
