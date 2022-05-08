@@ -11,27 +11,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MADProjectUserInterface">
         <activity
+            android:name=".AddSubjects"
+            android:exported="false" />
+        <activity
+            android:name=".DownloadsList"
+            android:exported="true" />
+        <activity
+            android:name=".VedioList"
+            android:exported="true" />
+        <activity
             android:name=".VideoPlayer"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".QuestionLibrary"
             android:exported="false"
             tools:ignore="Instantiatable" />
         <activity
             android:name=".QuizActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".EBooks"
             android:exported="false" />

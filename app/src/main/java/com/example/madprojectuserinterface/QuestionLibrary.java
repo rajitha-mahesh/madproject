@@ -18,24 +18,17 @@ public class QuestionLibrary {
             {"Flower", "Leaves", "Stem"}
     };
 
-
-
     private String mCorrectAnswers[] = {"Roots", "Leaves", "Flower", "Stem"};
-
-
-
 
     public String getQuestion(int a) {
         String question = mQuestions[a];
         return question;
     }
 
-
     public String getChoice1(int a) {
         String choice0 = mChoices[a][0];
         return choice0;
     }
-
 
     public String getChoice2(int a) {
         String choice1 = mChoices[a][1];
