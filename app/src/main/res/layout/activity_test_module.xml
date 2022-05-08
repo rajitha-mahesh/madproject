@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:id="@+id/drawer_layout"
     android:fitsSystemWindows="true"
-    tools:context=".TestModule2"
+    tools:context=".TestModule"
     tools:openDrawer="start">
 
     <ScrollView
@@ -22,42 +22,33 @@
             android:orientation="vertical">
 
             <androidx.appcompat.widget.Toolbar
-                app:navigationIcon="@drawable/ic_arrow_back_24"
+                app:navigationIcon="@drawable/ic_baseline_menu_24"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 android:id="@+id/toolbar"
-                android:background="@color/purple_500" />
+                android:background="@color/purple_500"
+                />
 
 
             <TextView
-                android:id="@+id/bio"
+                android:id="@+id/tvMathss5"
                 android:layout_width="397dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="40dp"
-                android:text="BIOLOGY"
+                android:text="Mathematics"
                 android:textColor="#000000"
-                android:textSize="30sp"
-                android:textStyle="bold|italic" />
-
-            <View
-                android:id="@+id/divider3"
-                android:layout_width="127dp"
-                android:layout_height="2dp"
-                android:layout_below="@id/bio"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:background="?android:attr/listDivider" />
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/b4CM4"
                 android:layout_width="253dp"
                 android:layout_height="48dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="20dp"
                 android:layout_gravity="center"
                 android:background="@drawable/module_page_btn"
-                android:onClick="selectedBio"
-                android:text="Biology" />
+                android:text="Combined Maths" />
 
             <Button
                 android:id="@+id/b4CM2"
@@ -66,8 +57,8 @@
                 android:layout_marginTop="20dp"
                 android:layout_gravity="center"
                 android:background="@drawable/module_page_btn"
-                android:onClick="selectedPhy"
-                android:text="Physics" />
+                android:text="Physics"
+                />
 
             <Button
                 android:id="@+id/b4CM3"
@@ -76,7 +67,6 @@
                 android:layout_marginTop="20dp"
                 android:layout_gravity="center"
                 android:background="@drawable/module_page_btn"
-                android:onClick="selectedChem"
                 android:text="Chemistry" />
 
             <Button
@@ -86,7 +76,6 @@
                 android:layout_marginTop="20dp"
                 android:layout_gravity="center"
                 android:background="@drawable/module_page_btn"
-                android:onClick="selectedIT"
                 android:text="Information Technology" />
 
             <View
@@ -94,7 +83,7 @@
                 android:layout_width="409dp"
                 android:layout_height="5dp"
                 android:layout_below="@id/b4CM4"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginRight="2dp"
                 android:background="?android:attr/listDivider"/>
 
@@ -104,7 +93,7 @@
                 android:layout_width="328dp"
                 android:layout_height="213dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="20dp"
                 app:srcCompat="@drawable/ad_image"
                 tools:ignore="SpeakableTextPresentCheck" />
 

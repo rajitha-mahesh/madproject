@@ -4,7 +4,15 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
+
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class AddSubjects extends AppCompatActivity {
 
@@ -33,24 +41,25 @@ public class AddSubjects extends AppCompatActivity {
         subjectPay = new SubjectPay();
         ref = database.getInstance().getReference().child("user");
 
-        ref addValueeventlistener(new.valueeventlistener(){
+        ref.addValueEventListener(new ValueEventListener() {
             @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot){
-                if (dataSnapshot.exists()){
-                    maxid = (int) dataSnapshot.getChildrenCount();
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                if (snapshot.exists()){
+                    maxid = (int) snapshot.getChildrenCount();
                 }else{
                     ///////////
                 }
             }
 
             @Override
-                    public void onCancelled(@NonNull DatabaseError databaseError){
+            public void onCancelled(@NonNull DatabaseError error) {
 
             }
         });
-        paysub.setOnClickListener(new view.OnClickListener (){
+
+        paysub.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view){
+            public void onClick(View view) {
 
                 subjectPay.setSubject1(subject1.getText().toString());
                 subjectPay.setSubject2(subject2.getText().toString());
@@ -59,7 +68,7 @@ public class AddSubjects extends AppCompatActivity {
 
                 ref.child(string.valueOf(maxid+1)).setValue (subjectPay);
             }
-
         });
+
     }
 }
