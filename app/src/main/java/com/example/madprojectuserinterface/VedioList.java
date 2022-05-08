@@ -14,7 +14,7 @@ public class VedioList extends AppCompatActivity {
         setContentView(R.layout.activity_vedio_list);
 
             VideoView videoView = findViewById(R.id.videoView);
-            videoView.setVideoPath("android.resource://"+getPackageName()+"/"+ R.raw.maths);
+            videoView.setVideoPath("android.resource://"+getPackageName()+"/"+ R.raw.pendiulum_motion);
             MediaController mediaController = new MediaController(this);
             mediaController.setAnchorView(videoView);
             videoView.setMediaController(mediaController);
