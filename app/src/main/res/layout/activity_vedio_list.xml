@@ -57,7 +57,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:background="@color/purple_200">
+                android:background="@drawable/bg_deisgn3">
 
 
                 <TextView
@@ -78,6 +78,19 @@
                     android:background="#00000000"
                     android:padding="20dp"
                     android:textSize="30dp" />
+
+                <Button
+                    android:id="@+id/delBtn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="bottom|end"
+                    android:layout_marginLeft="301dp"
+                    android:layout_marginBottom="17dp"
+                    android:background="@drawable/ic_baseline_delete_24"
+                    android:padding="30dp"
+                    android:textSize="50dp" />
 
                 <FrameLayout
                     android:layout_width="match_parent"
@@ -105,7 +118,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:background="@color/purple_200">
+                android:background="@drawable/bg_design4">
 
 
                 <TextView
@@ -126,6 +139,19 @@
                     android:background="#00000000"
                     android:padding="20dp"
                     android:textSize="30dp" />
+
+                <Button
+                    android:id="@+id/delBtn2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="bottom|end"
+                    android:layout_marginLeft="301dp"
+                    android:layout_marginBottom="17dp"
+                    android:background="@drawable/ic_baseline_delete_24"
+                    android:padding="30dp"
+                    android:textSize="50dp" />
 
                 <FrameLayout
                     android:layout_width="match_parent"
@@ -153,7 +179,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:background="@color/purple_200">
+                android:background="@drawable/bg_deisgn3">
 
 
                 <TextView
@@ -174,6 +200,19 @@
                     android:background="#00000000"
                     android:padding="20dp"
                     android:textSize="30dp" />
+
+                <Button
+                    android:id="@+id/delBtn3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="bottom|end"
+                    android:layout_marginLeft="301dp"
+                    android:layout_marginBottom="17dp"
+                    android:background="@drawable/ic_baseline_delete_24"
+                    android:padding="30dp"
+                    android:textSize="50dp" />
 
                 <FrameLayout
                     android:layout_width="match_parent"
@@ -201,7 +240,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:background="@color/purple_200">
+                android:background="@drawable/bg_design4">
 
 
                 <TextView
@@ -222,6 +261,19 @@
                     android:background="#00000000"
                     android:padding="20dp"
                     android:textSize="30dp" />
+
+                <Button
+                    android:id="@+id/delBtn4"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="bottom|end"
+                    android:layout_marginLeft="301dp"
+                    android:layout_marginBottom="17dp"
+                    android:background="@drawable/ic_baseline_delete_24"
+                    android:padding="30dp"
+                    android:textSize="50dp" />
 
                 <FrameLayout
                     android:layout_width="match_parent"
@@ -249,7 +301,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:background="@color/purple_200">
+                android:background="@drawable/bg_deisgn3">
 
 
                 <TextView
@@ -270,6 +322,19 @@
                     android:background="#00000000"
                     android:padding="20dp"
                     android:textSize="30dp" />
+
+                <Button
+                    android:id="@+id/delBtn5"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="bottom|end"
+                    android:layout_marginLeft="301dp"
+                    android:layout_marginBottom="17dp"
+                    android:background="@drawable/ic_baseline_delete_24"
+                    android:padding="30dp"
+                    android:textSize="50dp" />
 
                 <FrameLayout
                     android:layout_width="match_parent"

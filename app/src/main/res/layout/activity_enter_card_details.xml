@@ -4,23 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EnterCardDetails">
+    tools:context=".EnterCardDetails"
+    android:background="@drawable/bg_deisgn3">
 
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/bluetextureimage"
-        android:layout_width="wrap_content"
-        android:layout_height="510dp"
+        android:layout_width="match_parent"
+        android:layout_height="549dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="7dp"
-        android:layout_marginTop="168dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="158dp"
         android:layout_marginEnd="5dp"
-        android:layout_marginBottom="53dp"
+        android:layout_marginBottom="24dp"
         android:adjustViewBounds="true"
         android:scaleType="fitCenter"
-        android:src="@drawable/bluebackground"
+        android:src="@drawable/bg_deisgn3"
         app:shapeAppearanceOverlay="@style/roundimageview" />
 
     <TextView
@@ -154,8 +155,8 @@
         android:layout_height="125dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="37dp"
-        android:layout_marginEnd="11dp"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="-5dp"
         android:layout_marginBottom="45dp"
         app:srcCompat="@drawable/cardpay" />
 

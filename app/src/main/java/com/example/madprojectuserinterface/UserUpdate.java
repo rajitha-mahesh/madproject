@@ -12,6 +12,7 @@ import com.example.madprojectuserinterface.models.User;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -110,5 +111,22 @@ public class UserUpdate extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(), UserProfile.class));
             }
         });
+    }
+
+
+    public void userDelete(View view) {
+        db.collection("users")
+                .document(authUser.getId())
+                .delete()
+                .addOnSuccessListener(new OnSuccessListener<Void>() {
+                    @Override
+                    public void onSuccess(Void unused) {
+                        FirebaseUser user = mAuth.getCurrentUser();
+                        mAuth.signOut();
+                        if (user != null) user.delete();
+                        Toast.makeText(UserUpdate.this, "Profile Details Deleted Successfully.", Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(getApplicationContext(), SignUp.class));
+                    }
+                });
     }
 }

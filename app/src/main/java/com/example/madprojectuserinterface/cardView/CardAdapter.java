@@ -70,7 +70,7 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.PaymentHolder2
             txtDateCard.setText(String.format(Locale.US,
                     "Month %d",payment.getDate()));
             txtTeacherNameCard.setText(String.format(Locale.US,
-                    "Name : %d ",payment.getTeacher_name()));
+                    "Name : %d ",payment.getStudent_name()));
         }
 
     }
