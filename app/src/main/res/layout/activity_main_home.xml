@@ -101,6 +101,7 @@
                     android:layout_height="140dp"
                     android:layout_marginLeft="40dp"
                     android:background="@drawable/home_btn"
+                    android:onClick="selectedBio"
                     android:text="Biology" />
 
             </LinearLayout>
@@ -119,6 +120,7 @@
                     android:layout_marginLeft="40dp"
                     android:layout_marginTop="10dp"
                     android:background="@drawable/home_btn"
+                    android:onClick="selectedCommerce"
                     android:text="Commerce" />
 
                 <Button
@@ -129,6 +131,7 @@
                     android:layout_marginLeft="40dp"
                     android:layout_marginTop="10dp"
                     android:background="@drawable/home_btn"
+                    android:onClick="selectedArt"
                     android:text="Art" />
 
 

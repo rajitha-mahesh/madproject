@@ -110,6 +110,20 @@ public class MainHome extends AppCompatActivity {
         startActivity(i);
     }
 
+    public void selectedBio(View view) {
+        Intent i = new Intent(getApplicationContext(), TestModule2.class);
+        startActivity(i);
+    }
+
+    public void selectedCommerce(View view) {
+        Intent i = new Intent(getApplicationContext(), TestModule3.class);
+        startActivity(i);
+    }
+
+    public void selectedArt(View view) {
+        Intent i = new Intent(getApplicationContext(), TestModule4.class);
+        startActivity(i);
+    }
     public void selectPassPapers(View view) {
         Intent i = new Intent(getApplicationContext(), PastPapers.class);
         startActivity(i);
@@ -119,5 +133,6 @@ public class MainHome extends AppCompatActivity {
         Intent i = new Intent(getApplicationContext(), EBooks.class);
         startActivity(i);
     }
+
 
 }

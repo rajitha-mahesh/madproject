@@ -55,8 +55,8 @@
                 android:layout_height="48dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="30dp"
-                android:onClick="selectedComMaths"
                 android:background="@drawable/module_page_btn"
+                android:onClick="selectedComMaths"
                 android:text="Combined Maths" />
 
             <Button
@@ -65,8 +65,8 @@
                 android:layout_height="48dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
-                android:onClick="selectedPhy"
                 android:background="@drawable/module_page_btn"
+                android:onClick="selectedPhy"
                 android:text="Physics" />
 
             <Button
@@ -75,8 +75,8 @@
                 android:layout_height="48dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
-                android:onClick="selectedChe"
                 android:background="@drawable/module_page_btn"
+                android:onClick="selectedChe"
                 android:text="Chemistry" />
 
             <Button
@@ -85,8 +85,8 @@
                 android:layout_height="48dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
-                android:onClick="selectedIT"
                 android:background="@drawable/module_page_btn"
+                android:onClick="selectedIT"
                 android:text="Information Technology" />
 
             <View

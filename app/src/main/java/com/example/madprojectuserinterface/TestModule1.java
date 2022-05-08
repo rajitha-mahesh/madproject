@@ -15,10 +15,6 @@ import android.widget.Toast;
 
 public class TestModule1 extends AppCompatActivity {
 
-    private Button ShowDialog1;
-    private Button ShowDialog2;
-    private Button ShowDialog3;
-    private Button ShowDialog4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -116,7 +112,8 @@ public class TestModule1 extends AppCompatActivity {
                         break;
 
                     case DialogInterface.BUTTON_NEGATIVE:
-                        //No button clicked
+                        i = new Intent(getApplicationContext(), MainHome.class);
+                        startActivity(i);
                         break;
                 }
             }
@@ -139,7 +136,8 @@ public class TestModule1 extends AppCompatActivity {
                         break;
 
                     case DialogInterface.BUTTON_NEGATIVE:
-                        //No button clicked
+                        i = new Intent(getApplicationContext(), MainHome.class);
+                        startActivity(i);
                         break;
                 }
             }
@@ -161,7 +159,8 @@ public class TestModule1 extends AppCompatActivity {
                         break;
 
                     case DialogInterface.BUTTON_NEGATIVE:
-                        //No button clicked
+                        i = new Intent(getApplicationContext(), MainHome.class);
+                        startActivity(i);
                         break;
                 }
             }
@@ -183,7 +182,8 @@ public class TestModule1 extends AppCompatActivity {
                         break;
 
                     case DialogInterface.BUTTON_NEGATIVE:
-                        //No button clicked
+                        i = new Intent(getApplicationContext(), MainHome.class);
+                        startActivity(i);
                         break;
                 }
             }
