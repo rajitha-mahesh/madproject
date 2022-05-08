@@ -19,6 +19,8 @@ public class InModule extends AppCompatActivity {
 
         Button button = findViewById(R.id.measurment_btn);
 
+     /*  backBtn = findViewById(R.id.back_pressed);
+
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -34,6 +36,6 @@ public class InModule extends AppCompatActivity {
             public void onClick(View view) {
                 InModule.super.onBackPressed();
             }
-        });*/
+        }); */
     }
 }

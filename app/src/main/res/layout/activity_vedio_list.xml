@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VedioList"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize">
+
+            <ImageView
+                android:id="@+id/back_pressed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="15dp"
+                android:src="@drawable/ic_baseline_arrow_back_24" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="15dp"
+                android:src="@drawable/ic_baseline_search_24" />
+
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider" />
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#00000000"
+            android:layout_margin="20dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@color/purple_200">
+
+
+                <TextView
+
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="120dp"
+                    android:layout_alignParentBottom="true"
+                    android:padding="25dp"
+                    android:text="Video 1"
+                    android:textColor="@color/black"
+                    android:textSize="30dp" />
+
+
+                <Button
+                    android:layout_width="280dp"
+                    android:layout_height="match_parent"
+                    android:background="#00000000"
+                    android:padding="20dp"
+                    android:textSize="30dp" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView">
+
+                    <VideoView
+                        android:id="@+id/videoView"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp" />
+                </FrameLayout>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#00000000"
+            android:layout_margin="20dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@color/purple_200">
+
+
+                <TextView
+
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="120dp"
+                    android:layout_alignParentBottom="true"
+                    android:padding="25dp"
+                    android:text="Video 2"
+                    android:textColor="@color/black"
+                    android:textSize="30dp" />
+
+
+                <Button
+                    android:layout_width="280dp"
+                    android:layout_height="match_parent"
+                    android:background="#00000000"
+                    android:padding="20dp"
+                    android:textSize="30dp" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView2">
+
+                    <VideoView
+                        android:id="@+id/videoView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp" />
+                </FrameLayout>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#00000000"
+            android:layout_margin="20dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@color/purple_200">
+
+
+                <TextView
+
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="120dp"
+                    android:layout_alignParentBottom="true"
+                    android:padding="25dp"
+                    android:text="Video 3"
+                    android:textColor="@color/black"
+                    android:textSize="30dp" />
+
+
+                <Button
+                    android:layout_width="280dp"
+                    android:layout_height="match_parent"
+                    android:background="#00000000"
+                    android:padding="20dp"
+                    android:textSize="30dp" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView3">
+
+                    <VideoView
+                        android:id="@+id/videoView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp" />
+                </FrameLayout>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#00000000"
+            android:layout_margin="20dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@color/purple_200">
+
+
+                <TextView
+
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="120dp"
+                    android:layout_alignParentBottom="true"
+                    android:padding="25dp"
+                    android:text="Video 4"
+                    android:textColor="@color/black"
+                    android:textSize="30dp" />
+
+
+                <Button
+                    android:layout_width="280dp"
+                    android:layout_height="match_parent"
+                    android:background="#00000000"
+                    android:padding="20dp"
+                    android:textSize="30dp" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView4">
+
+                    <VideoView
+                        android:id="@+id/videoView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp" />
+                </FrameLayout>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#00000000"
+            android:layout_margin="20dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@color/purple_200">
+
+
+                <TextView
+
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="120dp"
+                    android:layout_alignParentBottom="true"
+                    android:padding="25dp"
+                    android:text="Video 5"
+                    android:textColor="@color/black"
+                    android:textSize="30dp" />
+
+
+                <Button
+                    android:layout_width="280dp"
+                    android:layout_height="match_parent"
+                    android:background="#00000000"
+                    android:padding="20dp"
+                    android:textSize="30dp" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView5">
+
+                    <VideoView
+                        android:id="@+id/videoView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp" />
+                </FrameLayout>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>
+
+
+

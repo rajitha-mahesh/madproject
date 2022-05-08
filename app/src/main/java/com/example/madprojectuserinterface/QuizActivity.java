@@ -56,7 +56,6 @@ public class QuizActivity extends AppCompatActivity {
         });
 
         //End of Button Listener for Button1
-
         //Start of Button Listener for Button2
         mButtonChoice2.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -78,8 +77,6 @@ public class QuizActivity extends AppCompatActivity {
         });
 
         //End of Button Listener for Button2
-
-
         //Start of Button Listener for Button3
         mButtonChoice3.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -101,11 +98,6 @@ public class QuizActivity extends AppCompatActivity {
         });
 
         //End of Button Listener for Button3
-
-
-
-
-
     }
 
     private void updateQuestion(){
@@ -117,7 +109,6 @@ public class QuizActivity extends AppCompatActivity {
         mAnswer = mQuestionLibrary.getCorrectAnswer(mQuestionNumber);
         mQuestionNumber++;
     }
-
 
     private void updateScore(int point) {
         mScoreView.setText("" + mScore);

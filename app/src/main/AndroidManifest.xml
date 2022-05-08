@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.madprojectuserinterface" >
+    package="com.example.madprojectuserinterface">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -11,6 +13,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MADProjectUserInterface" >
         <activity
+            android:name=".AddSubjects"
+            android:exported="false" />
+        <activity
+            android:name=".DownloadsList"
+            android:exported="true" />
+        <activity
+            android:name=".VedioList"
+            android:exported="true" />
+        <activity
+            android:name=".VideoPlayer"
+            android:exported="true" />
+        <activity
             android:name=".MainHome"
             android:exported="false" />
         <activity
@@ -19,6 +33,9 @@
         <activity
             android:name=".PdfActivity"
             android:exported="false" />
+        <activity
+            android:name=".QuizActivity"
+            android:exported="true" />
         <activity
             android:name=".EBooks"
             android:exported="false" />
