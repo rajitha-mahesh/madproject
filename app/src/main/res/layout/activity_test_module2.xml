@@ -22,12 +22,11 @@
             android:orientation="vertical">
 
             <androidx.appcompat.widget.Toolbar
-                app:navigationIcon="@drawable/ic_baseline_menu_24"
+                app:navigationIcon="@drawable/ic_arrow_back_24"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 android:id="@+id/toolbar"
-                android:background="@color/purple_500"
-                />
+                android:background="@color/purple_500" />
 
 
             <TextView
