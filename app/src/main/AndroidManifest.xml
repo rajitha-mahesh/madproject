@@ -11,11 +11,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MADProjectUserInterface">
         <activity
-            android:name=".DownloadsList"
+            android:name=".AddSubjects"
             android:exported="false" />
         <activity
+            android:name=".DownloadsList"
+            android:exported="true" />
+        <activity
             android:name=".VedioList"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".VideoPlayer"
             android:exported="true">
@@ -40,61 +43,61 @@
         </activity>
         <activity
             android:name=".EBooks"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".BiologyPastPapers"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".PhysicsPastPapers"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".ComMathPastPapers"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".PastPapers"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".TestModule1"
             android:exported="true" />
         <activity
             android:name=".Module"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".InModule"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".FogrtPassword"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".Favourites"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".ChangePassword"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".student_payment_details"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".enter_transfer_detaill"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".EnterCardDetails"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".UserUpdate"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".UserProfile"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".MainHome"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".SignUp"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".Login"
             android:exported="true">
