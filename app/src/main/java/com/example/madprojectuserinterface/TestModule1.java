@@ -3,15 +3,10 @@ package com.example.madprojectuserinterface;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.Toast;
 
 public class TestModule1 extends AppCompatActivity {
 
@@ -112,7 +107,7 @@ public class TestModule1 extends AppCompatActivity {
                         break;
 
                     case DialogInterface.BUTTON_NEGATIVE:
-                        i = new Intent(getApplicationContext(), MainHome.class);
+                        i = new Intent(getApplicationContext(), Stream.class);
                         startActivity(i);
                         break;
                 }
@@ -136,7 +131,7 @@ public class TestModule1 extends AppCompatActivity {
                         break;
 
                     case DialogInterface.BUTTON_NEGATIVE:
-                        i = new Intent(getApplicationContext(), MainHome.class);
+                        i = new Intent(getApplicationContext(), Stream.class);
                         startActivity(i);
                         break;
                 }
@@ -159,7 +154,7 @@ public class TestModule1 extends AppCompatActivity {
                         break;
 
                     case DialogInterface.BUTTON_NEGATIVE:
-                        i = new Intent(getApplicationContext(), MainHome.class);
+                        i = new Intent(getApplicationContext(), Stream.class);
                         startActivity(i);
                         break;
                 }
@@ -182,7 +177,7 @@ public class TestModule1 extends AppCompatActivity {
                         break;
 
                     case DialogInterface.BUTTON_NEGATIVE:
-                        i = new Intent(getApplicationContext(), MainHome.class);
+                        i = new Intent(getApplicationContext(), Stream.class);
                         startActivity(i);
                         break;
                 }

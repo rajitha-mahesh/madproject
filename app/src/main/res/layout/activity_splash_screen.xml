@@ -8,7 +8,7 @@
     tools:context=".SplashScreen">
 
     <LinearLayout
-        android:id="@+id/start_bg"
+        android:id="@+id/app_logo"
         android:layout_width="250dp"
         android:layout_height="250dp"
         android:layout_centerInParent="true"

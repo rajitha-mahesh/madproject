@@ -145,6 +145,7 @@
             android:layout_height="48dp"
             android:layout_below="@+id/button7"
             android:backgroundTint="#AB8C8C93"
+            android:onClick="editProfile"
             android:text="Edit" />
 
         <Space
@@ -158,6 +159,7 @@
             android:layout_height="48dp"
             android:layout_below="@+id/button7"
             android:backgroundTint="#AB8C8C93"
+            android:onClick="logOut"
             android:text="Log Out" />
 
         <Space
