@@ -19,8 +19,8 @@ public class PaymentType extends AppCompatActivity {
         setContentView(R.layout.activity_payment_type);
 
 
-        changeToCardPay =  findViewById(R.id.cardbtn);
-        changeToBankTransfer =  findViewById(R.id.banktransferbtn);
+        changeToCardPay = findViewById(R.id.cardbtn);
+        changeToBankTransfer = findViewById(R.id.banktransferbtn);
 
         changeToCardPay.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -49,4 +49,5 @@ public class PaymentType extends AppCompatActivity {
         Intent i = new Intent(getApplicationContext(), EnterTransferDetaill.class);
         startActivity(i);
     }
+
 }
