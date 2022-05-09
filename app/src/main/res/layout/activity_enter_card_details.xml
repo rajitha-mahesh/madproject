@@ -50,7 +50,19 @@
         android:text="@string/card_detail"
         android:textColor="#0B0A0A"
         android:textSize="22sp" />
-
+    <EditText
+        android:id="@+id/paymentMethod"
+        android:layout_width="334dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/entercdetail"
+        android:layout_alignStart="@+id/bluetextureimage"
+        android:layout_alignEnd="@+id/bluetextureimage"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="29dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/card_number" />
     <EditText
         android:id="@+id/cardno"
         android:layout_width="334dp"
