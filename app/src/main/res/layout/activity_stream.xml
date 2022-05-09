@@ -57,17 +57,14 @@
 <!--        tools:ignore ="MissingConstraints"/>-->
 
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fillViewport="true"
-        android:scrollbars="none">
+
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
             android:layout_marginTop="50dp"
+            android:background="@drawable/bg_deisgn3"
+            android:orientation="vertical"
             android:paddingBottom="50dp">
 
             <TextView
@@ -79,12 +76,11 @@
                 android:text="Stream"
                 android:textColor="@color/black"
                 android:textSize="27dp"
-                android:textStyle="bold" />
+                android:textStyle="bold|italic" />
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/transparant_bg">
+                android:layout_height="wrap_content">
 
                 <Button
                     android:id="@+id/mathe_btn"
@@ -93,7 +89,8 @@
                     android:layout_marginLeft="40dp"
                     android:background="@drawable/home_btn"
                     android:onClick="selectedMaths"
-                    android:text="Mathematics" />
+                    android:text="Mathematics"
+                    android:textSize="20dp"/>
 
                 <Button
                     android:id="@+id/biolgy_btn"
@@ -102,14 +99,14 @@
                     android:layout_marginLeft="40dp"
                     android:background="@drawable/home_btn"
                     android:onClick="selectedBio"
-                    android:text="Biology" />
+                    android:text="Biology"
+                    android:textSize="20dp"/>
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/transparant_bg">
+                android:layout_height="wrap_content">
 
 
                 <Button
@@ -121,7 +118,8 @@
                     android:layout_marginTop="10dp"
                     android:background="@drawable/home_btn"
                     android:onClick="selectedCommerce"
-                    android:text="Commerce" />
+                    android:text="Commerce"
+                    android:textSize="20dp"/>
 
                 <Button
                     android:id="@+id/art_btn"
@@ -132,7 +130,8 @@
                     android:layout_marginTop="10dp"
                     android:background="@drawable/home_btn"
                     android:onClick="selectedArt"
-                    android:text="Art" />
+                    android:text="Art"
+                    android:textSize="20dp"/>
 
 
             </LinearLayout>
@@ -160,7 +159,7 @@
                     android:text="Resources"
                     android:textColor="@color/black"
                     android:textSize="27dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold|italic" />
 
                 <Button
                     android:id="@+id/pp_btn"
@@ -169,7 +168,8 @@
                     android:layout_gravity="center"
                     android:background="@drawable/home_btn"
                     android:onClick="selectPassPapers"
-                    android:text="Past papers" />
+                    android:text="Past papers"
+                    android:textSize="20dp"/>
 
                 <Button
                     android:id="@+id/ebook_btn"
@@ -179,7 +179,8 @@
                     android:layout_marginTop="10dp"
                     android:background="@drawable/home_btn"
                     android:onClick="selectedEBook"
-                    android:text="E-Book" />
+                    android:text="E-Book"
+                    android:textSize="20dp"/>
 
                 <Button
                     android:id="@+id/video_btn"
@@ -188,13 +189,13 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="10dp"
                     android:background="@drawable/home_btn"
-                    android:text="Videos" />
+                    android:text="Videos"
+                    android:textSize="20dp"/>
 
             </LinearLayout>
 
         </LinearLayout>
 
-    </ScrollView>
 
 </RelativeLayout>
 

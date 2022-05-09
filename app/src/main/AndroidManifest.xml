@@ -35,7 +35,7 @@
             android:exported="true" />
         <activity
             android:name=".EBooks"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".BiologyPastPapers"
             android:exported="false" />
@@ -44,7 +44,7 @@
             android:exported="false" />
         <activity
             android:name=".ComMathPastPapers"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".PastPapers"
             android:exported="false" />
@@ -71,7 +71,7 @@
             android:exported="false" />
         <activity
             android:name=".Favourites"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".ChangePassword"
             android:exported="false" />
