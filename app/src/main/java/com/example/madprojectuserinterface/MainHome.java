@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.madprojectuserinterface.cardView.CardViewActivity;
+
 public class MainHome extends AppCompatActivity {
 
     @Override
@@ -26,6 +28,7 @@ public class MainHome extends AppCompatActivity {
     }
 
     public void selectedPayments(View view) {
+        startActivity(new Intent(getApplicationContext(), CardViewActivity.class));
     }
 
     public void selectedCommerce(View view) {

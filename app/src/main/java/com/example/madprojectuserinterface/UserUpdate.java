@@ -97,7 +97,7 @@ public class UserUpdate extends AppCompatActivity {
         TextInputEditText age = (TextInputEditText) findViewById(R.id.age);
 
         Map<String, Object> data = new HashMap<>();
-        data.put("firstName", fullNameEditText.getText().toString());
+        data.put("name", fullNameEditText.getText().toString());
         data.put("phoneNumber", mobileEditText.getText().toString());
         data.put("age", age.getText().toString());
         data.put("gender", gender.getText().toString());
