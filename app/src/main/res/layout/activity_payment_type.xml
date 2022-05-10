@@ -9,8 +9,8 @@
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/bluetextureimage"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="406dp"
+        android:layout_height="306dp"
         android:layout_centerInParent="true"
         android:layout_marginStart="5dp"
         android:layout_marginTop="5dp"
@@ -19,19 +19,19 @@
         android:adjustViewBounds="true"
         android:scaleType="fitCenter"
         android:src="@drawable/fto5lyx_light_blue_backgrounds"
-        app:strokeColor="@null"
-        app:shapeAppearanceOverlay="@style/roundimageview" />
+        app:shapeAppearanceOverlay="@style/roundimageview"
+        app:strokeColor="@null" />
 
     <TextView
         android:id="@+id/payvia"
-        android:layout_width="92dp"
+        android:layout_width="133dp"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/bluetextureimage"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="170dp"
-        android:layout_marginTop="18dp"
-        android:layout_marginEnd="149dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="108dp"
         android:text="@string/pay_via"
         android:textColor="#0B0A0A"
         android:textSize="24sp" />
@@ -44,11 +44,11 @@
         android:layout_alignStart="@+id/bluetextureimage"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="154dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="154dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="153dp"
         android:background="@drawable/roundbtn"
-        app:strokeColor="@null"
-        android:text="@string/card" />
+        android:text="@string/card"
+        app:strokeColor="@null" />
 
     <Button
         android:id="@+id/banktransferbtn"
@@ -57,14 +57,14 @@
         android:layout_below="@+id/cardbtn"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="146dp"
-        android:layout_marginTop="27dp"
-        android:layout_marginEnd="142dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="136dp"
         android:background="@drawable/roundbtn"
-        android:text="@string/bank_t"
         android:onClick="selectedBankTransfer"
-        app:strokeColor="@null"
-        app:shapeAppearanceOverlay="@style/roundbtnview" />
+        android:text="@string/bank_t"
+        app:shapeAppearanceOverlay="@style/roundbtnview"
+        app:strokeColor="@null" />
 
 
 </RelativeLayout>

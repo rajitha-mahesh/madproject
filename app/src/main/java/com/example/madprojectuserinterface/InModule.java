@@ -44,4 +44,5 @@ public class InModule extends AppCompatActivity {
         Intent i = new Intent(getApplicationContext(), TestModule1.class);
         startActivity(i);
     }
+
 }
