@@ -36,6 +36,7 @@ public class UserUpdate extends AppCompatActivity {
         getAuthUser();
     }
 
+    //Get user details for the db
     private void getAuthUser() {
         String userId = mAuth.getCurrentUser().getUid();
         DocumentReference documentReference = db.collection("users").document(userId);
@@ -68,13 +69,14 @@ public class UserUpdate extends AppCompatActivity {
         });
     }
 
+    //Update user validation
     public void updateProfile(View view) {
         TextInputEditText fullNameEditText = (TextInputEditText) findViewById(R.id.full_name);
         TextInputEditText mobileEditText = (TextInputEditText) findViewById(R.id.phone_number);
         TextInputEditText age = (TextInputEditText) findViewById(R.id.age);
         TextInputEditText gender = (TextInputEditText) findViewById(R.id.gender);
 
-        //User update validate section
+        //User update validate section - if some data is empty, a toast message is visible to the user
         if (TextUtils.isEmpty(fullNameEditText.getText().toString())) {
             Toast.makeText(UserUpdate.this, "First name cannot be empty", Toast.LENGTH_SHORT).show();
         } else if (TextUtils.isEmpty(gender.getText().toString())) {
@@ -89,6 +91,7 @@ public class UserUpdate extends AppCompatActivity {
 
     }
 
+    //Update user data
     private void update() {
 
         TextInputEditText fullNameEditText = (TextInputEditText) findViewById(R.id.full_name);
@@ -96,25 +99,32 @@ public class UserUpdate extends AppCompatActivity {
         TextInputEditText gender = (TextInputEditText) findViewById(R.id.gender);
         TextInputEditText age = (TextInputEditText) findViewById(R.id.age);
 
+        //assign the obejcts
         Map<String, Object> data = new HashMap<>();
         data.put("name", fullNameEditText.getText().toString());
         data.put("phoneNumber", mobileEditText.getText().toString());
         data.put("age", age.getText().toString());
         data.put("gender", gender.getText().toString());
 
+        //make data reference after going to the collection
         String userId = mAuth.getCurrentUser().getUid();
+        //store/update the database by the former document
         DocumentReference documentReference = db.collection("users").document(userId);
         documentReference.update(data).addOnSuccessListener(new OnSuccessListener<Void>() {
+            //generate a toast message if update is succussful
             @Override
             public void onSuccess(Void unused) {
                 Toast.makeText(UserUpdate.this, "Profile Details Updated Successfully!", Toast.LENGTH_SHORT).show();
+                //back to the user profile
                 startActivity(new Intent(getApplicationContext(), UserProfile.class));
             }
         });
     }
 
 
+    //User Delete
     public void userDelete(View view) {
+        //after sign out delete the user data
         db.collection("users")
                 .document(authUser.getId())
                 .delete()
@@ -122,9 +132,12 @@ public class UserUpdate extends AppCompatActivity {
                     @Override
                     public void onSuccess(Void unused) {
                         FirebaseUser user = mAuth.getCurrentUser();
+                        //first the user get sign out from the account
                         mAuth.signOut();
                         if (user != null) user.delete();
+                        //if delete is success a toast message is generated
                         Toast.makeText(UserUpdate.this, "Profile Details Deleted Successfully.", Toast.LENGTH_SHORT).show();
+                        //then navigate into sign up page
                         startActivity(new Intent(getApplicationContext(), SignUp.class));
                     }
                 });
