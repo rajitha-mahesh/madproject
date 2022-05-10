@@ -71,7 +71,7 @@
             android:exported="false" />
         <activity
             android:name=".Favourites"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".ChangePassword"
             android:exported="false" />
