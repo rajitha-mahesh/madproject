@@ -11,7 +11,7 @@
         android:theme="@style/Theme.MADProjectUserInterface">
         <activity
             android:name=".rating"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".EnterCardDetails"
             android:exported="false" />
