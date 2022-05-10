@@ -14,18 +14,39 @@ public class User {
     private String phoneNumber;
     private String gender;
     private String age;
+    private boolean isMaths = false;
+    private boolean isPhysics = false;
 
 
     public User() {
 
     }
 
-    public User(String name, String email, String phoneNumber, String gender, String age) {
+    public User(String id, String name, String email, String phoneNumber, String gender, String age, boolean isMaths, boolean isPhysics) {
+        this.id = id;
         this.name = name;
         this.email = email;
         this.phoneNumber = phoneNumber;
         this.gender = gender;
         this.age = age;
+        this.isMaths = isMaths;
+        this.isPhysics = isPhysics;
+    }
+
+    public boolean isMaths() {
+        return isMaths;
+    }
+
+    public void setMaths(boolean maths) {
+        isMaths = maths;
+    }
+
+    public boolean isPhysics() {
+        return isPhysics;
+    }
+
+    public void setPhysics(boolean physics) {
+        isPhysics = physics;
     }
 
     public String getName() {

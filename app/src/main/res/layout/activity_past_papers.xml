@@ -57,7 +57,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:background="@drawable/bg_design">
+                android:background="@drawable/bg_deisgn3">
 
 
                 <TextView
@@ -93,7 +93,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:background="@color/purple_200">
+                android:background="@drawable/bg_design4">
 
 
                 <TextView
@@ -129,7 +129,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:background="@color/purple_200">
+                android:background="@drawable/bg_deisgn3">
 
 
                 <TextView
@@ -165,7 +165,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:background="@color/purple_200">
+                android:background="@drawable/bg_design4">
 
 
                 <TextView
@@ -201,7 +201,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:background="@color/purple_200">
+                android:background="@drawable/bg_deisgn3">
 
 
                 <TextView
@@ -236,7 +236,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:background="@color/purple_200">
+                android:background="@drawable/bg_design4">
 
 
                 <TextView
@@ -272,7 +272,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:background="@color/purple_200">
+                android:background="@drawable/bg_deisgn3">
 
 
                 <TextView
@@ -308,7 +308,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:background="@color/purple_200">
+                android:background="@drawable/bg_design4">
 
 
                 <TextView
@@ -344,7 +344,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:background="@color/purple_200">
+                android:background="@drawable/bg_deisgn3">
 
 
                 <TextView
@@ -380,7 +380,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:background="@color/purple_200">
+                android:background="@drawable/bg_design4">
 
 
                 <TextView
@@ -416,7 +416,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:background="@color/purple_200">
+                android:background="@drawable/bg_deisgn3">
 
 
                 <TextView
@@ -452,7 +452,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:background="@color/purple_200">
+                android:background="@drawable/bg_design4">
 
 
                 <TextView
