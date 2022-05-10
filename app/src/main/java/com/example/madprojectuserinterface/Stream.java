@@ -114,5 +114,9 @@ public class Stream extends AppCompatActivity {
         startActivity(i);
     }
 
-
+    @Override
+    public void onBackPressed() {
+        Intent i = new Intent(getApplicationContext(), MainHome.class);
+        startActivity(i);
+    }
 }

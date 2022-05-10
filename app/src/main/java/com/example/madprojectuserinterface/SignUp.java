@@ -125,6 +125,8 @@ public class SignUp extends AppCompatActivity {
         user.setAge(age.getText().toString());
         user.setGender(gender.getText().toString());
         user.setEmail(email.trim());
+        user.setMaths(false);
+        user.setPhysics(false);
 
         DocumentReference documentReference = db.collection("users").document(userId);
 

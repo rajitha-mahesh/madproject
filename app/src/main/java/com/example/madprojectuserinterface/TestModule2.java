@@ -24,6 +24,8 @@ public class TestModule2 extends AppCompatActivity {
                 switch (which) {
                     case DialogInterface.BUTTON_POSITIVE:
                         Intent i = new Intent(getApplicationContext(), PaymentType.class);
+                        i.putExtra("stream", "BIOLOGY");
+                        i.putExtra("subject", "Bio");
                         startActivity(i);
                         break;
 
@@ -48,6 +50,8 @@ public class TestModule2 extends AppCompatActivity {
                 switch (which) {
                     case DialogInterface.BUTTON_POSITIVE:
                         Intent i = new Intent(getApplicationContext(), PaymentType.class);
+                        i.putExtra("stream", "BIOLOGY");
+                        i.putExtra("subject", "Physics");
                         startActivity(i);
                         break;
 
@@ -72,6 +76,8 @@ public class TestModule2 extends AppCompatActivity {
                 switch (which) {
                     case DialogInterface.BUTTON_POSITIVE:
                         Intent i = new Intent(getApplicationContext(), PaymentType.class);
+                        i.putExtra("stream", "BIOLOGY");
+                        i.putExtra("subject", "Chemistry");
                         startActivity(i);
                         break;
 
@@ -96,6 +102,8 @@ public class TestModule2 extends AppCompatActivity {
                 switch (which) {
                     case DialogInterface.BUTTON_POSITIVE:
                         Intent i = new Intent(getApplicationContext(), PaymentType.class);
+                        i.putExtra("stream", "BIOLOGY");
+                        i.putExtra("subject", "Information Technology");
                         startActivity(i);
                         break;
 

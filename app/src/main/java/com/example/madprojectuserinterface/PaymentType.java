@@ -26,6 +26,11 @@ public class PaymentType extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(PaymentType.this, EnterCardDetails.class);
+                System.out.println("----------------------------------- stream : " + getIntent().getStringExtra("stream"));
+                System.out.println("----------------------------------- subject : " + getIntent().getStringExtra("subject"));
+                intent.putExtra("stream", getIntent().getStringExtra("stream"));
+                intent.putExtra("subject", getIntent().getStringExtra("subject"));
+                intent.putExtra("paymentMethod", "Card");
                 startActivity(intent);
             }
         });
@@ -38,11 +43,6 @@ public class PaymentType extends AppCompatActivity {
             }
         });
 
-    }
-
-    public void selectedCard(View view) {
-        Intent i = new Intent(getApplicationContext(), EnterCardDetails.class);
-        startActivity(i);
     }
 
     public void selectedBankTransfer(View view) {

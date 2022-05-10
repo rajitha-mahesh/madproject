@@ -14,16 +14,17 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/bg_deisgn3"
             android:orientation="vertical"
             android:paddingBottom="50dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="50dp"
-                android:orientation="horizontal"
-                android:gravity="center_vertical"
                 android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="50dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
                 android:paddingBottom="50dp">
 
                 <TextView
@@ -32,34 +33,36 @@
                     android:layout_below="@+id/toolbar"
                     android:text="Tutor"
                     android:textColor="@color/black"
-                    android:textSize="27dp"
+                    android:textSize="40dp"
                     android:textStyle="bold" />
+
                 <Space
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1" />
+
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:backgroundTint="@color/purple_500"
-                    app:srcCompat="@drawable/user_icon"
+                    android:backgroundTint="#3D5AFE"
                     android:onClick="goToProfile"
-                    />
+                    app:srcCompat="@drawable/user_icon" />
             </LinearLayout>
+
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/transparant_bg">
+                android:layout_height="wrap_content">
 
                 <Button
                     android:id="@+id/mathe_btn"
                     android:layout_width="150dp"
                     android:layout_height="140dp"
-                    android:layout_marginLeft="40dp"
+                    android:layout_marginLeft="30dp"
                     android:background="@drawable/home_btn"
                     android:onClick="selectedStream"
-                    android:text="Stream" />
+                    android:text="Stream"
+                    android:textSize="20dp"/>
 
                 <Button
                     android:id="@+id/biolgy_btn"
@@ -68,14 +71,14 @@
                     android:layout_marginLeft="40dp"
                     android:background="@drawable/home_btn"
                     android:onClick="selectedBio"
-                    android:text="Downloads" />
+                    android:text="Downloads"
+                    android:textSize="20dp"/>
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/transparant_bg">
+                android:layout_height="wrap_content">
 
 
                 <Button
@@ -83,11 +86,12 @@
                     android:layout_width="150dp"
                     android:layout_height="140dp"
                     android:layout_below="@+id/mathe_btn"
-                    android:layout_marginLeft="40dp"
+                    android:layout_marginLeft="30dp"
                     android:layout_marginTop="10dp"
                     android:background="@drawable/home_btn"
                     android:onClick="selectedFavourites"
-                    android:text="Favourites" />
+                    android:text="Favourites"
+                    android:textSize="20dp"/>
 
                 <Button
                     android:id="@+id/art_btn"
@@ -98,7 +102,8 @@
                     android:layout_marginTop="10dp"
                     android:background="@drawable/home_btn"
                     android:onClick="selectedPayments"
-                    android:text="Payments" />
+                    android:text="Payments"
+                    android:textSize="20dp"/>
 
 
             </LinearLayout>
@@ -106,7 +111,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/transparant_bg"
+
                 android:gravity="center_horizontal">
 
 
@@ -115,11 +120,11 @@
                     android:layout_width="150dp"
                     android:layout_height="140dp"
                     android:layout_below="@+id/mathe_btn"
-                    android:layout_marginLeft="40dp"
                     android:layout_marginTop="10dp"
                     android:background="@drawable/home_btn"
                     android:onClick="selectedCommerce"
-                    android:text="Feedback" />
+                    android:text="Feedback"
+                    android:textSize="20dp"/>
 
 
             </LinearLayout>
