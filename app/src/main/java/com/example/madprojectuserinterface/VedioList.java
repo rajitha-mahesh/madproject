@@ -2,7 +2,9 @@ package com.example.madprojectuserinterface;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.MediaController;
 import android.widget.VideoView;
 
@@ -19,4 +21,9 @@ public class VedioList extends AppCompatActivity {
             mediaController.setAnchorView(videoView);
             videoView.setMediaController(mediaController);
         }
+
+    public void selectVideo(View view) {
+        Intent i = new Intent(getApplicationContext(), VideoPlayer.class);
+        startActivity(i);
     }
+}

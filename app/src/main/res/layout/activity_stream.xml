@@ -190,7 +190,8 @@
                     android:layout_marginTop="10dp"
                     android:background="@drawable/home_btn"
                     android:text="Videos"
-                    android:textSize="20dp"/>
+                    android:textSize="20dp"
+                    android:onClick="selectVideoList"/>
 
             </LinearLayout>
 

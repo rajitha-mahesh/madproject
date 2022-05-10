@@ -61,6 +61,7 @@ public class EnterCardDetails extends AppCompatActivity {
                 } else if (TextUtils.isEmpty(cvv.getText().toString())) {
                     Toast.makeText(EnterCardDetails.this, "CVV cannot be empty", Toast.LENGTH_SHORT).show();
                 } else {
+                    //payment do part (in crud)
                     Payment payment = new Payment();
 //                    SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm");
                     Date date = new Date();
@@ -92,6 +93,8 @@ public class EnterCardDetails extends AppCompatActivity {
                                             Toast.LENGTH_SHORT).show();
                                 }
                             });
+                    //update user is maths and is physics
+
 
                     User currentUser = new User();
                     System.out.println("--------------------------------- "+ currentUser.isMaths());
@@ -101,7 +104,7 @@ public class EnterCardDetails extends AppCompatActivity {
                         data.put("isMaths", currentUser.isMaths());
                     }else if (getIntent().getStringExtra("subject").equals("Physics")){
                         currentUser.setPhysics(true);
-                        data.put("isPhysics", currentUser.isMaths());
+                        data.put("isPhysics", currentUser.isPhysics());
                     }
 
 

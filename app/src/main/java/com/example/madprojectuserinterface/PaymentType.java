@@ -28,6 +28,7 @@ public class PaymentType extends AppCompatActivity {
                 Intent intent = new Intent(PaymentType.this, EnterCardDetails.class);
                 System.out.println("----------------------------------- stream : " + getIntent().getStringExtra("stream"));
                 System.out.println("----------------------------------- subject : " + getIntent().getStringExtra("subject"));
+                //get details from previous activity
                 intent.putExtra("stream", getIntent().getStringExtra("stream"));
                 intent.putExtra("subject", getIntent().getStringExtra("subject"));
                 intent.putExtra("paymentMethod", "Card");

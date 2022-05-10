@@ -5,6 +5,8 @@ import com.google.firebase.firestore.Exclude;
 
 import java.util.Date;
 
+
+//user model
 public class User {
 
     @Exclude

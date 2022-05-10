@@ -7,7 +7,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.madprojectuserinterface.MainHome;
 import com.example.madprojectuserinterface.R;
 import com.example.madprojectuserinterface.models.Payment;
 import com.google.firebase.auth.FirebaseAuth;
@@ -45,34 +44,36 @@ public class CardViewActivity extends AppCompatActivity {
 //        CreateDataForCards();
 
     }
+
     @Override
     protected void onStart() {
         super.onStart();
-        getRoomReservation(mAuth.getCurrentUser().getUid());
+        getUserPayment(mAuth.getCurrentUser().getUid());
     }
-    private void getRoomReservation(String currentUser) {
-
+    //user data retrieve (crud)
+    private void getUserPayment(String currentUser) {
+        //access database to payment
         db.collection("payment")
                 .whereEqualTo("userId", currentUser)
                 .addSnapshotListener(new EventListener<QuerySnapshot>() {
                     @Override
                     public void onEvent(@Nullable QuerySnapshot value, @Nullable FirebaseFirestoreException error) {
                         List<Payment> resCardList = new ArrayList<>();
-                        for (QueryDocumentSnapshot roomRes : value) {
-                            System.out.println("-------------------------------------- " + roomRes.getString("paymentMethod"));
-                            Payment hallObj = new Payment(
-                                    roomRes.getString("id"),
-                                    roomRes.getString("userId"),
-                                    roomRes.getString("paymentMethod"),
-                                    roomRes.getString("stream"),
-                                    roomRes.getString("subject"),
-                                    roomRes.getString("methodNumber"),
-                                    roomRes.getString("holderName"),
-                                    roomRes.getLong("totalAmount"),
-                                    roomRes.getDate("paymentDate")
+                        for (QueryDocumentSnapshot payment : value) {
+                            System.out.println("-------------------------------------- " + payment.getString("paymentMethod"));
+                            Payment paymentobj = new Payment(
+                                    payment.getString("id"),
+                                    payment.getString("userId"),
+                                    payment.getString("paymentMethod"),
+                                    payment.getString("stream"),
+                                    payment.getString("subject"),
+                                    payment.getString("methodNumber"),
+                                    payment.getString("holderName"),
+                                    payment.getLong("totalAmount"),
+                                    payment.getDate("paymentDate")
 
                             );
-                            resCardList.add(hallObj);
+                            resCardList.add(paymentobj);
                         }
                         CardAdapter adapter = new CardAdapter(CardViewActivity.this, resCardList);
                         recyclerView.setAdapter(adapter);

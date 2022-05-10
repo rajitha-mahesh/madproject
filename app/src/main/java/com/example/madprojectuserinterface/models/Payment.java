@@ -3,7 +3,7 @@ package com.example.madprojectuserinterface.models;
 import android.widget.EditText;
 
 import java.util.Date;
-
+//model to access data to getters  and setters data
 public class Payment {
 
     private String id;
