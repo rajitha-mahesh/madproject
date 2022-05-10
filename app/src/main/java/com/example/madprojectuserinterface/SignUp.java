@@ -87,6 +87,7 @@ public class SignUp extends AppCompatActivity {
         startActivity(startMain);
     }
 
+    //Create user
     private void signUpUser(String txt_email, String txt_password) {
 
         FirebaseAuth mAuth;
@@ -100,8 +101,8 @@ public class SignUp extends AppCompatActivity {
                     // Sign in success, update UI with the signed-in user's information
                     Toast.makeText(SignUp.this, "Authentication Success.",
                             Toast.LENGTH_SHORT).show();
-//                    startActivity(new Intent(SignUp.this, MainHome.class));
-//                    finish();
+
+                    //create a id for user
                     saveUserDetails(txt_email, mAuth.getCurrentUser().getUid());
                 } else {
                     // If sign in fails, display a message to the user.
@@ -112,6 +113,7 @@ public class SignUp extends AppCompatActivity {
         });
     }
 
+    // save the details to the db
     public void saveUserDetails(String email, String userId) {
         EditText name = (EditText) findViewById(R.id.name);
         EditText phoneNumber = (EditText) findViewById(R.id.phone_number);
@@ -125,6 +127,8 @@ public class SignUp extends AppCompatActivity {
         user.setAge(age.getText().toString());
         user.setGender(gender.getText().toString());
         user.setEmail(email.trim());
+        user.setMaths(false);
+        user.setPhysics(false);
 
         DocumentReference documentReference = db.collection("users").document(userId);
 

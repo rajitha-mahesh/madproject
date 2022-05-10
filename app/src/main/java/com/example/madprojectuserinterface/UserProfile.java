@@ -32,6 +32,7 @@ public class UserProfile extends AppCompatActivity {
         getAuthUser();
     }
 
+    //read user data from db
     private void getAuthUser(){
         String userId = mAuth.getCurrentUser().getUid();
         DocumentReference documentReference = db.collection("users").document(userId);

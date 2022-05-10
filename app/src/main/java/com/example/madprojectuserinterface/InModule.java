@@ -38,4 +38,11 @@ public class InModule extends AppCompatActivity {
             }
         }); */
     }
+
+    @Override
+    public void onBackPressed() {
+        Intent i = new Intent(getApplicationContext(), TestModule1.class);
+        startActivity(i);
+    }
+
 }

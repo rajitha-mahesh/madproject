@@ -22,6 +22,7 @@
         android:adjustViewBounds="true"
         android:scaleType="fitCenter"
         android:src="@drawable/bg_deisgn3"
+        app:strokeColor="@null"
         app:shapeAppearanceOverlay="@style/roundimageview" />
 
     <TextView
@@ -36,6 +37,7 @@
         android:layout_marginEnd="99dp"
         android:text="@string/enter_card_detail"
         android:textColor="#0B0A0A"
+        app:strokeColor="@null"
         android:textSize="24sp" />
 
     <TextView
@@ -50,7 +52,9 @@
         android:layout_marginEnd="176dp"
         android:text="@string/card_detail"
         android:textColor="#0B0A0A"
+        app:strokeColor="@null"
         android:textSize="22sp" />
+
 
     <EditText
         android:id="@+id/cardno"
@@ -63,8 +67,9 @@
         android:layout_marginTop="57dp"
         android:layout_marginEnd="29dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/card_number" />
+        android:hint="@string/card_number"
+        app:strokeColor="@null"
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/amount"
@@ -77,8 +82,9 @@
         android:layout_marginTop="308dp"
         android:layout_marginEnd="24dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/amount" />
+        android:inputType="none"
+        android:editable="false"
+        android:text="2000 LKR" />
 
     <EditText
         android:id="@+id/cdholdername"
@@ -91,8 +97,8 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="24dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/card_holder" />
+        android:hint="@string/card_holder"
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/month_year"
@@ -105,8 +111,8 @@
         android:layout_marginTop="83dp"
         android:layout_marginEnd="206dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/mm_yy_" />
+        android:hint="@string/mm_yy_"
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/cvv"
@@ -119,8 +125,8 @@
         android:layout_marginTop="81dp"
         android:layout_marginEnd="24dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/cvv" />
+        android:hint="@string/cvv"
+        android:inputType="textPersonName" />
 
     <CheckBox
         android:id="@+id/checkBox"
@@ -147,6 +153,7 @@
         android:layout_marginEnd="129dp"
         android:background="@drawable/roundbtn"
         android:onClick="cardPay"
+        app:strokeColor="@null"
         android:text="@string/pay_card" />
 
     <ImageView
@@ -158,6 +165,7 @@
         android:layout_marginTop="63dp"
         android:layout_marginEnd="-5dp"
         android:layout_marginBottom="45dp"
+        app:strokeColor="@null"
         app:srcCompat="@drawable/cardpay" />
 
 

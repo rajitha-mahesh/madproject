@@ -1,15 +1,39 @@
 package com.example.madprojectuserinterface;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.firestore.CollectionReference;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.EventListener;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.FirebaseFirestoreException;
+import com.google.firebase.firestore.Query;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
+import com.google.firebase.firestore.QuerySnapshot;
+
+import java.util.Arrays;
+import java.util.Collections;
 
 public class TestModule1 extends AppCompatActivity {
 
+    FirebaseFirestore db = FirebaseFirestore.getInstance();
+    FirebaseAuth mAuth = FirebaseAuth.getInstance();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,168 +41,107 @@ public class TestModule1 extends AppCompatActivity {
         setContentView(R.layout.activity_test_module1);
 
 
-//        ShowDialog1 = findViewById(R.id.com_mths_btn);
-//        ShowDialog2 = findViewById(R.id.phy_btn);
-//        ShowDialog3 = findViewById(R.id.chem_btn);
-//        ShowDialog4 = findViewById(R.id.it_btn);
-
-
-
-
-
-
-
-        //Create the Dialog here
-//        Dialog dialog = new Dialog(this);
-//        dialog.setContentView(R.layout.activity_test_module1);
-//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-//            dialog.getWindow().setBackgroundDrawable(getDrawable(R.drawable.custom_dialog_background));
-//        }
-//        dialog.getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-//        dialog.setCancelable(false); //Optional
-//        dialog.getWindow().getAttributes().windowAnimations = R.style.DialogAnimation; //Setting the animations to dialog
-
-//        Button pay = dialog.findViewById(R.id.btn_pay);
-//        Button Cancel = dialog.findViewById(R.id.btn_cancel);
-
-//        pay.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//
-//                Toast.makeText(TestModule1.this, "pay", Toast.LENGTH_SHORT).show();
-//                dialog.dismiss();
-//            }
-//        });
-
-//        Cancel.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//
-//                Toast.makeText(TestModule1.this, "Cancel", Toast.LENGTH_SHORT).show();
-//                dialog.dismiss();
-//            }
-//        });
-
-
-//        ShowDialog1.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//
-//                dialog.show(); // Showing the dialog here
-//            }
-//        });
-//
-//        ShowDialog2.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//
-//                dialog.show(); // Showing the dialog here
-//            }
-//        });
-//
-//        ShowDialog3.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//
-//                dialog.show(); // Showing the dialog here
-//            }
-//        });
-//
-//        ShowDialog4.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//
-//                dialog.show(); // Showing the dialog here
-//            }
-//        });
-
-        
     }
 
     public void selectedIT(View view) {
 
-        DialogInterface.OnClickListener dialogClickListener = new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                switch (which){
-                    case DialogInterface.BUTTON_POSITIVE:
-                        Intent i = new Intent(getApplicationContext(), PaymentType.class);
-                        startActivity(i);
-                        break;
-
-                    case DialogInterface.BUTTON_NEGATIVE:
-                        i = new Intent(getApplicationContext(), Stream.class);
-                        startActivity(i);
-                        break;
-                }
-            }
-        };
-
-        AlertDialog.Builder builder = new AlertDialog.Builder(view.getContext());
-        builder.setMessage("Are You Sure To Follow the Module?").setPositiveButton("Pay", dialogClickListener)
-                .setNegativeButton("Cancel", dialogClickListener).show();
-
     }
 
     public void selectedComMaths(View view) {
-        DialogInterface.OnClickListener dialogClickListener = new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                switch (which){
-                    case DialogInterface.BUTTON_POSITIVE:
-                        Intent i = new Intent(getApplicationContext(), PaymentType.class);
-                        startActivity(i);
-                        break;
 
-                    case DialogInterface.BUTTON_NEGATIVE:
-                        i = new Intent(getApplicationContext(), Stream.class);
-                        startActivity(i);
-                        break;
+        String userId = mAuth.getCurrentUser().getUid();
+        DocumentReference documentReference = db.collection("users").document(userId);
+        documentReference.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+
+            @Override
+            public void onSuccess(DocumentSnapshot documentSnapshot) {
+                if (documentSnapshot.getBoolean("isMaths")){
+                    startActivity(new Intent(TestModule1.this, InModule.class));
+                }else {
+                    DialogInterface.OnClickListener dialogClickListener = new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            switch (which) {
+                                case DialogInterface.BUTTON_POSITIVE:
+                                    Intent intent = new Intent(getApplicationContext(), PaymentType.class);
+                                    intent.putExtra("stream", "Mathematics");
+                                    intent.putExtra("subject", "Combined Maths");
+                                    startActivity(intent);
+                                    break;
+
+                                case DialogInterface.BUTTON_NEGATIVE:
+                                    intent = new Intent(getApplicationContext(), Stream.class);
+                                    startActivity(intent);
+                                    break;
+                            }
+                        }
+                    };
+
+                    AlertDialog.Builder builder = new AlertDialog.Builder(view.getContext());
+                    builder.setMessage("Are You Sure To Follow the Module?").setPositiveButton("Pay", dialogClickListener)
+                            .setNegativeButton("Cancel", dialogClickListener).show();
                 }
             }
-        };
 
-        AlertDialog.Builder builder = new AlertDialog.Builder(view.getContext());
-        builder.setMessage("Are You Sure To Follow the Module?").setPositiveButton("Pay", dialogClickListener)
-                .setNegativeButton("Cancel", dialogClickListener).show();
+        });
+
+
     }
 
     public void selectedPhy(View view) {
-        DialogInterface.OnClickListener dialogClickListener = new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                switch (which){
-                    case DialogInterface.BUTTON_POSITIVE:
-                        Intent i = new Intent(getApplicationContext(), PaymentType.class);
-                        startActivity(i);
-                        break;
 
-                    case DialogInterface.BUTTON_NEGATIVE:
-                        i = new Intent(getApplicationContext(), Stream.class);
-                        startActivity(i);
-                        break;
+        String userId = mAuth.getCurrentUser().getUid();
+        DocumentReference documentReference = db.collection("users").document(userId);
+        documentReference.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+
+            @Override
+            public void onSuccess(DocumentSnapshot documentSnapshot) {
+                if (documentSnapshot.getBoolean("isPhysics")){
+                    startActivity(new Intent(TestModule1.this, InModule.class));
+                }else {
+                    DialogInterface.OnClickListener dialogClickListener = new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            switch (which) {
+                                case DialogInterface.BUTTON_POSITIVE:
+                                    Intent intent = new Intent(getApplicationContext(), PaymentType.class);
+                                    intent.putExtra("stream", "Mathematics");
+                                    intent.putExtra("subject", "Physics");
+                                    startActivity(intent);
+                                    break;
+
+                                case DialogInterface.BUTTON_NEGATIVE:
+                                    intent = new Intent(getApplicationContext(), Stream.class);
+                                    startActivity(intent);
+                                    break;
+                            }
+                        }
+                    };
+
+                    AlertDialog.Builder builder = new AlertDialog.Builder(view.getContext());
+                    builder.setMessage("Are You Sure To Follow the Module?").setPositiveButton("Pay", dialogClickListener)
+                            .setNegativeButton("Cancel", dialogClickListener).show();
                 }
             }
-        };
 
-        AlertDialog.Builder builder = new AlertDialog.Builder(view.getContext());
-        builder.setMessage("Are You Sure To Follow the Module?").setPositiveButton("Pay", dialogClickListener)
-                .setNegativeButton("Cancel", dialogClickListener).show();
+        });
     }
 
     public void selectedChe(View view) {
         DialogInterface.OnClickListener dialogClickListener = new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                switch (which){
+                switch (which) {
                     case DialogInterface.BUTTON_POSITIVE:
-                        Intent i = new Intent(getApplicationContext(), PaymentType.class);
-                        startActivity(i);
+                        Intent intent = new Intent(getApplicationContext(), PaymentType.class);
+                        intent.putExtra("stream", "Mathematics");
+                        intent.putExtra("subject", "Chemistry");
+                        startActivity(intent);
                         break;
 
                     case DialogInterface.BUTTON_NEGATIVE:
-                        i = new Intent(getApplicationContext(), Stream.class);
-                        startActivity(i);
+                        intent = new Intent(getApplicationContext(), Stream.class);
+                        startActivity(intent);
                         break;
                 }
             }
@@ -187,5 +150,11 @@ public class TestModule1 extends AppCompatActivity {
         AlertDialog.Builder builder = new AlertDialog.Builder(view.getContext());
         builder.setMessage("Are You Sure To Follow the Module?").setPositiveButton("Pay", dialogClickListener)
                 .setNegativeButton("Cancel", dialogClickListener).show();
+    }
+
+    @Override
+    public void onBackPressed() {
+        Intent i = new Intent(getApplicationContext(), Stream.class);
+        startActivity(i);
     }
 }
