@@ -52,6 +52,7 @@ public class EnterCardDetails extends AppCompatActivity {
                 EditText totalAmount = (EditText) findViewById(R.id.amount);
                 EditText monthYear = (EditText) findViewById(R.id.month_year);
                 EditText cvv = (EditText) findViewById(R.id.cvv);
+                //validations
                 if (TextUtils.isEmpty(cardNo.getText().toString())) {
                     Toast.makeText(EnterCardDetails.this, "Card Number cannot be empty", Toast.LENGTH_SHORT).show();
                 } else if (TextUtils.isEmpty(holderName.getText().toString())) {
