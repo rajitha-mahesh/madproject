@@ -1,0 +1,33 @@
+Index: app/src/main/java/com/example/madprojectuserinterface/TestMenu.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.madprojectuserinterface;\r\n\r\nimport androidx.annotation.NonNull;\r\nimport androidx.appcompat.app.ActionBar;\r\nimport androidx.appcompat.app.ActionBarDrawerToggle;\r\nimport androidx.appcompat.app.AppCompatActivity;\r\nimport androidx.appcompat.widget.Toolbar;\r\nimport androidx.core.view.GravityCompat;\r\nimport androidx.drawerlayout.widget.DrawerLayout;\r\n\r\nimport android.os.Bundle;\r\nimport android.util.Log;\r\nimport android.view.MenuItem;\r\n\r\nimport com.google.android.material.navigation.NavigationView;\r\n\r\npublic class TestMenu extends AppCompatActivity {\r\n\r\n    DrawerLayout drawerLayout;\r\n    NavigationView navigationView;\r\n    ActionBarDrawerToggle actionBarDrawerToggle;\r\n    Toolbar toolbar;\r\n\r\n\r\n    @Override\r\n    public boolean onOptionsItemSelected(@NonNull MenuItem item) {\r\n        if(actionBarDrawerToggle.onOptionsItemSelected(item))\r\n        {\r\n          return true;\r\n        }\r\n        return super.onOptionsItemSelected(item);\r\n    }\r\n\r\n    @Override\r\n    protected void onCreate(Bundle savedInstanceState) {\r\n        super.onCreate(savedInstanceState);\r\n        setContentView(R.layout.activity_test_menu);\r\n\r\n\r\n        //nav bar\r\n        drawerLayout = findViewById(R.id.drawer_layout);\r\n        navigationView = findViewById(R.id.navigationView);\r\n        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this,drawerLayout,toolbar, R.string.menu_open, R.string.menu_close);\r\n        drawerLayout.addDrawerListener(toggle);\r\n        actionBarDrawerToggle.syncState();\r\n        getSupportActionBar().setDisplayHomeAsUpEnabled(true);\r\n        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {\r\n\r\n            @Override\r\n            public boolean onNavigationItemSelected(@NonNull MenuItem item) {\r\n\r\n                switch (item.getItemId()) {\r\n                    case R.id.nav_home:\r\n                        Log.i(\"MENU_DRAWER_TAG\", \"Home item is clicked\");\r\n                        drawerLayout.closeDrawer(GravityCompat.START);\r\n                        break;\r\n\r\n                    case R.id.nav_profile:\r\n                        Log.i(\"MENU_DRAWER_TAG\", \"profile item is clicked\");\r\n                        drawerLayout.closeDrawer(GravityCompat.START);\r\n                }\r\n\r\n                return true;\r\n            }\r\n        });\r\n\r\n    }\r\n\r\n}\r\n
+===================================================================
+diff --git a/app/src/main/java/com/example/madprojectuserinterface/TestMenu.java b/app/src/main/java/com/example/madprojectuserinterface/TestMenu.java
+--- a/app/src/main/java/com/example/madprojectuserinterface/TestMenu.java	
++++ b/app/src/main/java/com/example/madprojectuserinterface/TestMenu.java	
+@@ -11,6 +11,7 @@
+ import android.os.Bundle;
+ import android.util.Log;
+ import android.view.MenuItem;
++import android.widget.Toast;
+ 
+ import com.google.android.material.navigation.NavigationView;
+ 
+@@ -51,12 +52,14 @@
+ 
+                 switch (item.getItemId()) {
+                     case R.id.nav_home:
+-                        Log.i("MENU_DRAWER_TAG", "Home item is clicked");
++                        //Log.i("MENU_DRAWER_TAG", "Home item is clicked");
++                        Toast.makeText(getApplicationContext(),"Home", Toast.LENGTH_SHORT).show();
+                         drawerLayout.closeDrawer(GravityCompat.START);
+                         break;
+ 
+                     case R.id.nav_profile:
+-                        Log.i("MENU_DRAWER_TAG", "profile item is clicked");
++                        // Log.i("MENU_DRAWER_TAG", "profile item is clicked");
++                        Toast.makeText(getApplicationContext(),"Profile",Toast.LENGTH_SHORT).show();
+                         drawerLayout.closeDrawer(GravityCompat.START);
+                 }
+ 

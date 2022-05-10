@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/android studio workspace/MADprojectuserinterface/app/src/main/res/drawable/home_btn.xml" value="0.1455" />
+        <entry key="..\:/android studio workspace/MADprojectuserinterface/app/src/main/res/drawable/roundbtn.xml" value="0.1" />
+        <entry key="..\:/android studio workspace/MADprojectuserinterface/app/src/main/res/drawable/transparant_bg.xml" value="0.144" />
+        <entry key="..\:/android studio workspace/MADprojectuserinterface/app/src/main/res/drawable/transparant_bg2.xml" value="0.144" />
+        <entry key="..\:/android studio workspace/MADprojectuserinterface/app/src/main/res/layout/activity_biology_past_papers.xml" value="0.25416666666666665" />
+        <entry key="..\:/android studio workspace/MADprojectuserinterface/app/src/main/res/layout/activity_card_view.xml" value="0.2111111111111111" />
+        <entry key="..\:/android studio workspace/MADprojectuserinterface/app/src/main/res/layout/activity_change_password.xml" value="0.25416666666666665" />
+        <entry key="..\:/android studio workspace/MADprojectuserinterface/app/src/main/res/layout/activity_com_math_past_papers.xml" value="0.25416666666666665" />
+        <entry key="..\:/android studio workspace/MADprojectuserinterface/app/src/main/res/layout/activity_confirm_delete_favourite.xml" value="0.25416666666666665" />
+        <entry key="..\:/android studio workspace/MADprojectuserinterface/app/src/main/res/layout/activity_downloads_list.xml" value="0.25416666666666665" />
+        <entry key="..\:/android studio workspace/MADprojectuserinterface/app/src/main/res/layout/activity_ebooks.xml" value="0.25416666666666665" />
+        <entry key="..\:/android studio workspace/MADprojectuserinterface/app/src/main/res/layout/activity_enter_card_details.xml" value="0.17777777777777778" />
+        <entry key="..\:/android studio workspace/MADprojectuserinterface/app/src/main/res/layout/activity_enter_transfer_detaill.xml" value="0.18796296296296297" />
+        <entry key="..\:/android studio workspace/MADprojectuserinterface/app/src/main/res/layout/activity_favourites.xml" value="0.25416666666666665" />
+        <entry key="..\:/android studio workspace/MADprojectuserinterface/app/src/main/res/layout/activity_in_module.xml" value="0.25416666666666665" />
+        <entry key="..\:/android studio workspace/MADprojectuserinterface/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/android studio workspace/MADprojectuserinterface/app/src/main/res/layout/activity_main_home.xml" value="0.25416666666666665" />
+        <entry key="..\:/android studio workspace/MADprojectuserinterface/app/src/main/res/layout/activity_module.xml" value="0.25416666666666665" />
+        <entry key="..\:/android studio workspace/MADprojectuserinterface/app/src/main/res/layout/activity_past_paper.xml" value="0.25416666666666665" />
+        <entry key="..\:/android studio workspace/MADprojectuserinterface/app/src/main/res/layout/activity_past_papers.xml" value="0.25416666666666665" />
+        <entry key="..\:/android studio workspace/MADprojectuserinterface/app/src/main/res/layout/activity_payment_type.xml" value="0.25416666666666665" />
+        <entry key="..\:/android studio workspace/MADprojectuserinterface/app/src/main/res/layout/activity_pdf.xml" value="0.25416666666666665" />
+        <entry key="..\:/android studio workspace/MADprojectuserinterface/app/src/main/res/layout/activity_physics_past_papers.xml" value="0.25416666666666665" />
+        <entry key="..\:/android studio workspace/MADprojectuserinterface/app/src/main/res/layout/activity_popup.xml" value="0.25416666666666665" />
+        <entry key="..\:/android studio workspace/MADprojectuserinterface/app/src/main/res/layout/activity_question_library.xml" value="0.25416666666666665" />
+        <entry key="..\:/android studio workspace/MADprojectuserinterface/app/src/main/res/layout/activity_quiz.xml" value="0.25416666666666665" />
+        <entry key="..\:/android studio workspace/MADprojectuserinterface/app/src/main/res/layout/activity_sign_up.xml" value="0.25416666666666665" />
+        <entry key="..\:/android studio workspace/MADprojectuserinterface/app/src/main/res/layout/activity_splash_screen.xml" value="0.25416666666666665" />
+        <entry key="..\:/android studio workspace/MADprojectuserinterface/app/src/main/res/layout/activity_stream.xml" value="0.25416666666666665" />
+        <entry key="..\:/android studio workspace/MADprojectuserinterface/app/src/main/res/layout/activity_test_menu.xml" value="0.25416666666666665" />
+        <entry key="..\:/android studio workspace/MADprojectuserinterface/app/src/main/res/layout/activity_test_module.xml" value="0.25416666666666665" />
+        <entry key="..\:/android studio workspace/MADprojectuserinterface/app/src/main/res/layout/activity_test_module1.xml" value="0.25416666666666665" />
+        <entry key="..\:/android studio workspace/MADprojectuserinterface/app/src/main/res/layout/activity_test_module2.xml" value="0.25416666666666665" />
+        <entry key="..\:/android studio workspace/MADprojectuserinterface/app/src/main/res/layout/activity_test_module3.xml" value="0.25416666666666665" />
+        <entry key="..\:/android studio workspace/MADprojectuserinterface/app/src/main/res/layout/activity_test_module4.xml" value="0.25416666666666665" />
+        <entry key="..\:/android studio workspace/MADprojectuserinterface/app/src/main/res/layout/activity_user_profile.xml" value="0.25416666666666665" />
+        <entry key="..\:/android studio workspace/MADprojectuserinterface/app/src/main/res/layout/activity_user_update.xml" value="0.25416666666666665" />
+        <entry key="..\:/android studio workspace/MADprojectuserinterface/app/src/main/res/layout/activity_vedio_list.xml" value="0.2" />
+        <entry key="..\:/android studio workspace/MADprojectuserinterface/app/src/main/res/layout/activity_video_player.xml" value="0.25416666666666665" />
+        <entry key="..\:/android studio workspace/MADprojectuserinterface/app/src/main/res/layout/item_card.xml" value="0.2111111111111111" />
+        <entry key="..\:/android studio workspace/MADprojectuserinterface/app/src/main/res/layout/nav_header.xml" value="0.25416666666666665" />
+        <entry key="..\:/android studio workspace/MADprojectuserinterface/app/src/main/res/layout/recyclerview_of_payments.xml" value="0.2111111111111111" />
+        <entry key="..\:/android studio workspace/MADprojectuserinterface/app/src/main/res/menu/drawer_menu.xml" value="0.25416666666666665" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
+</project>

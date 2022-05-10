@@ -1,0 +1,67 @@
+Index: app/src/main/res/values/strings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><resources>\r\n    <string name=\"app_name\">MAD project user interface</string>\r\n\r\n    <string name=\"enter_card_detail\">Enter Card Details</string>\r\n    <string name=\"enter_transfer_detail\">Enter Transfer Details</string>\r\n    <string name=\"card_detail\">Card Details</string>\r\n    <string name=\"card_number\">Card number</string>\r\n    <string name=\"card\">Card</string>\r\n    <string name=\"card_holder\">Card holder’s name</string>\r\n    <string name=\"mm_yy_\">(MM/YY)</string>\r\n    <string name=\"cvv\">CVV</string>\r\n    <string name=\"pay_card\">Pay</string>\r\n    <string name=\"pay_transfer\">Pay</string>\r\n    <string name=\"pay_via\">Pay via</string>\r\n    <string name=\"slip_detail\">Slip Details</string>\r\n    <string name=\"name\">Name</string>\r\n    <string name=\"account_no\">Account Number</string>\r\n    <string name=\"amount\">Amount</string>\r\n    <string name=\"bank_t\">Bank Transfer</string>\r\n    <string name=\"save_cd_for_future\">save this card for future payments</string>\r\n\r\n</resources>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/values/strings.xml b/app/src/main/res/values/strings.xml
+--- a/app/src/main/res/values/strings.xml	
++++ b/app/src/main/res/values/strings.xml	
+@@ -19,4 +19,55 @@
+     <string name="bank_t">Bank Transfer</string>
+     <string name="save_cd_for_future">save this card for future payments</string>
+ 
++    #login
++    <string name="login">Login</string>
++    <string name="email">Email</string>
++    <string name="enter_emil">Namilapreshan@gmail.com</string>
++    <string name="password">Password</string>
++    <string name="log_pw">*************</string>
++    <string name="froget_pass">Froget Password?</string>
++    <string name="login_btn">Login</string>
++    <string name="log_btn2">Login with Google</string>
++    <string name="t_m2">Success...!!</string>
++    #Favorites
++    <string name="favo">Favorites</string>
++    <string name="F_view1">negotiable</string>
++    <string name="F_view2">negotiable</string>
++    <string name="F_view3">negotiable</string>
++    <string name="F_view4">negotiable</string>
++    <string name="F_view5">negotiable</string>
++    <string name="F_view6">negotiable</string>
++    #home
++    <string name="sub_view">Subjects</string>
++    <string name="math">Mathematics</string>
++    <string name="bio">Biology</string>
++    <string name="comm">Commerce</string>
++    <string name="art">Arts</string>
++    #home 2
++    <string name="mathematics">Mathematics</string>
++    <string name="cm_btn">Combined Maths</string>
++    <string name="phy_btn">Physics</string>
++    <string name="chem_btn">Chemistry</string>
++    <string name="it_btn">Information Technology</string>
++    #pop up msg
++    <string name="popup_ms">Are you Following the subject?</string>
++    <string name="no_btn">No</string>
++    <string name="yes_btn">Yes</string>
++    #subject pge
++    <string name="sub1_view">Physics</string>
++    <string name="chp_v">8 Chapters</string>
++    <string name="vide_v">32 Videos</string>
++    <string name="chpter_v">Chapters</string>
++    <string name="intro">An Introduction to motion</string>
++    <string name="test_btn">Test</string>
++    <string name="q_btn">Start Practice</string>
++    <string name="intro2">2. An Introduction</string>
++    <string name="test_btn2">Test</string>
++    <string name="q_btn2">Start Practice</string>
++    <string name="intro3">3. motion</string>
++    <string name="test_btn3">Test</string>
++    <string name="q_btn3">Start Practice</string>
++
++
++
+ </resources>
+\ No newline at end of file
